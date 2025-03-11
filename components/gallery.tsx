@@ -92,14 +92,14 @@ const galleryItems: GalleryItem[] = [
 ]
 
 // Get unique categories
-const categories = ["전체", ...Array.from(new Set(galleryItems.map((item) => item.category)))]
+const categories = ["全て", ...Array.from(new Set(galleryItems.map((item) => item.category)))]
 
 export default function Gallery() {
-  const [selectedCategory, setSelectedCategory] = useState("전체")
+  const [selectedCategory, setSelectedCategory] = useState("全て")
 
   // Filter items based on selected category
   const filteredItems =
-    selectedCategory === "전체" ? galleryItems : galleryItems.filter((item) => item.category === selectedCategory)
+    selectedCategory === "全て" ? galleryItems : galleryItems.filter((item) => item.category === selectedCategory)
 
   return (
     <div className="space-y-8">

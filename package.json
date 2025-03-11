@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d out --dotfiles"
+    "deploy": "fsutil file createnew out\\.nojekyll 0 && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.2",
