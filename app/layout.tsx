@@ -17,10 +17,16 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ko">
-      <body className={inter.className}>
-        <Navbar />
-        {children}
+    <html lang="ja">
+      <body className={`${inter.className} bg-gradient-to-b from-transparent to-white`}>
+        <div className="bg-[url('/Images/ID1.png?height=1080&width=1920')] bg-cover bg-center min-h-screen">
+          <div className="bg-[url('/Images/ID3.png?height=1080&width=1920')] bg-cover bg-center min-h-screen bg-fixed">
+            <div className="bg-white bg-opacity-80 min-h-screen">
+              <Navbar />
+              {children}
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   )

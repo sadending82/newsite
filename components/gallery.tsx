@@ -6,6 +6,8 @@ import { motion, AnimatePresence } from "framer-motion"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import Lightbox from "@/components/lightbox"
+
 
 // Gallery item type
 type GalleryItem = {
@@ -13,89 +15,76 @@ type GalleryItem = {
   title: string
   category: string
   imageUrl: string
+  date: string
 }
 
 // Sample gallery data
 const galleryItems: GalleryItem[] = [
   {
     id: 1,
-    title: "자연 풍경",
-    category: "자연",
-    imageUrl: "/placeholder.svg?height=400&width=600",
+    title: "江ノ島1",
+    category: "日常",
+    imageUrl: "/Images/ID1.png?height=400&width=600",
+    date: "2025-03-06",
   },
   {
     id: 2,
-    title: "도시 야경",
-    category: "도시",
-    imageUrl: "/placeholder.svg?height=400&width=600",
+    title: "江ノ島2",
+    category: "日常",
+    imageUrl: "/Images/ID2.png?height=400&width=600",
+    date: "2025-03-06",
   },
   {
     id: 3,
-    title: "산 풍경",
-    category: "자연",
-    imageUrl: "/placeholder.svg?height=400&width=600",
+    title: "真冬三...姉妹？兄弟？",
+    category: "日常",
+    imageUrl: "/Images/ID3.png?height=400&width=600",
+    date: "2025-03-06",
   },
   {
     id: 4,
-    title: "현대 건축물",
-    category: "건축",
-    imageUrl: "/placeholder.svg?height=400&width=600",
+    title: "No Title",
+    category: "日常",
+    imageUrl: "/Images/ID4.png?height=400&width=600",
+    date: "2025-01-14",
   },
   {
     id: 5,
-    title: "해변 일몰",
-    category: "자연",
-    imageUrl: "/placeholder.svg?height=400&width=600",
+    title: "No Title",
+    category: "日常",
+    imageUrl: "/Images/ID5.png?height=400&width=600",
+    date: "2025-01-14",
   },
   {
     id: 6,
-    title: "도시 거리",
-    category: "도시",
-    imageUrl: "/placeholder.svg?height=400&width=600",
+    title: "まだなのかなぁ？",
+    category: "日常",
+    imageUrl: "/Images/ID6.png?height=400&width=600",
+    date: "2025-01-15",
   },
   {
     id: 7,
-    title: "고전 건축물",
-    category: "건축",
-    imageUrl: "/placeholder.svg?height=400&width=600",
+    title: "No Title",
+    category: "日常",
+    imageUrl: "/Images/ID7.png?height=400&width=600",
+    date: "2025-01-18",
   },
   {
     id: 8,
-    title: "공원 전경",
-    category: "자연",
-    imageUrl: "/placeholder.svg?height=400&width=600",
-  },
-  {
-    id: 9,
-    title: "도시 스카이라인",
-    category: "도시",
-    imageUrl: "/placeholder.svg?height=400&width=600",
-  },
-  {
-    id: 10,
-    title: "현대 인테리어",
-    category: "건축",
-    imageUrl: "/placeholder.svg?height=400&width=600",
-  },
-  {
-    id: 11,
-    title: "동물 사진",
-    category: "동물",
-    imageUrl: "/placeholder.svg?height=400&width=600",
-  },
-  {
-    id: 12,
-    title: "야생 동물",
-    category: "동물",
-    imageUrl: "/placeholder.svg?height=400&width=600",
+    title: "のんべんだらり",
+    category: "イベント",
+    imageUrl: "/Images/ID8.png?height=400&width=600",
+    date: "2024-10-11",
   },
 ]
+
 
 // Get unique categories
 const categories = ["全て", ...Array.from(new Set(galleryItems.map((item) => item.category)))]
 
 export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState("全て")
+  const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null)
 
   // Filter items based on selected category
   const filteredItems =
@@ -127,19 +116,22 @@ export default function Gallery() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <Card className="overflow-hidden h-full">
+              <Card className="overflow-hidden h-full cursor-pointer" onClick={() => setSelectedImage(item)}>
                 <div className="relative aspect-[4/3]">
                   <Image src={item.imageUrl || "/placeholder.svg"} alt={item.title} fill className="object-cover" />
                 </div>
                 <CardContent className="p-4">
                   <h3 className="font-medium text-lg">{item.title}</h3>
                   <p className="text-sm text-muted-foreground">{item.category}</p>
+                  <p className="text-sm text-muted-foreground">{item.date}</p>
                 </CardContent>
               </Card>
             </motion.div>
           ))}
         </div>
       </AnimatePresence>
+
+      {selectedImage && <Lightbox image={selectedImage} onClose={() => setSelectedImage(null)} />}
     </div>
   )
 }
