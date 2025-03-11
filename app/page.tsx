@@ -1,103 +1,76 @@
-import Image from "next/image";
+import Image from "next/image"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main>
+      {/* 히어로 섹션 */}
+      <section className="container mx-auto px-4 py-12 md:py-24">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">창의적인 포트폴리오</h1>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg md:text-xl">
+            다양한 작품을 카테고리별로 살펴보세요. 저희의 갤러리에서 영감을 얻어가세요.
+          </p>
+          <div className="mt-8 flex justify-center gap-4">
+            <Button asChild size="lg">
+              <Link href="/gallery">
+                갤러리 보기 <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+            <Button variant="outline" asChild size="lg">
+              <Link href="/contact">연락하기</Link>
+            </Button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      </section>
+
+      {/* 두 개의 큰 이미지 섹션 */}
+      <section className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="space-y-4">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+              <Image
+                src="/placeholder.svg?height=800&width=1200"
+                alt="포트폴리오 이미지 1"
+                fill
+                className="object-cover transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+            <h2 className="text-2xl font-bold">자연의 아름다움</h2>
+            <p className="text-muted-foreground">
+              자연의 경이로운 모습을 담은 작품들을 감상해보세요. 산, 바다, 숲 등 다양한 자연 풍경을 담았습니다.
+            </p>
+            <Button variant="link" asChild className="p-0">
+              <Link href="/gallery">
+                더 보기 <ArrowRight className="ml-1 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+
+          <div className="space-y-4">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+              <Image
+                src="/placeholder.svg?height=800&width=1200"
+                alt="포트폴리오 이미지 2"
+                fill
+                className="object-cover transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+            <h2 className="text-2xl font-bold">도시의 활력</h2>
+            <p className="text-muted-foreground">
+              현대 도시의 역동적인 모습을 담은 작품들입니다. 도시의 건축물과 거리, 사람들의 일상을 담았습니다.
+            </p>
+            <Button variant="link" asChild className="p-0">
+              <Link href="/gallery">
+                더 보기 <ArrowRight className="ml-1 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </main>
+  )
 }
+
