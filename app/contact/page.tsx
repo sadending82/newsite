@@ -1,6 +1,5 @@
-import { Mail, Phone, MapPin, Clock } from "lucide-react"
+import { Mail, Phone} from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 
 export default function ContactPage() {
   return (
