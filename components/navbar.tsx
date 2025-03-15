@@ -11,7 +11,7 @@ export default function Navbar() {
     <header className="border-b">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-xl font-bold">
-          SadyTrd&apos;s Gallery
+          Sady_trd
         </Link>
         <nav className="flex gap-4">
           <Button variant={pathname === "/" ? "default" : "ghost"} asChild>

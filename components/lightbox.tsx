@@ -15,7 +15,6 @@ type LightboxProps = {
 
 export default function Lightbox({ image, onClose }: LightboxProps) {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
-  const [isLoading, SetIsLoading] = useState(true)
 
   useEffect(() => {
     if (!image) return

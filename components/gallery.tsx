@@ -205,7 +205,7 @@ export default function Gallery() {
   const [activeSubCategory, setActiveSubCategory] = useState<string | null>(null)
   //const [themeColor, setThemeColor] = useState("");
   const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null)
-  const [visibleItems, setVisibleItems] = useState<Set<number>>(new Set())
+  const [, setVisibleItems] = useState<Set<number>>(new Set())
   const observerRef = useRef<IntersectionObserver | null>(null)
   const itemRefs = useRef<Map<number, HTMLDivElement>>(new Map())
   const { setBackground } = useBackground();

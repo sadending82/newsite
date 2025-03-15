@@ -2,7 +2,7 @@ import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import { useBackground, BackgroundProvider } from "@/components/BackgroundContext"
+import { BackgroundProvider } from "@/components/BackgroundContext"
 import BackgroundWrapper from "@/components/BackgroundWrapper"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -21,7 +21,9 @@ export default function RootLayout({
     <html lang="ja">
       <body className={`${inter.className} bg-gradient-to-b from-transparent to-white`}>
         <BackgroundProvider>
-          <BackgroundWrapper>{children}</BackgroundWrapper>
+          <BackgroundWrapper>
+            {children}
+          </BackgroundWrapper>
         </BackgroundProvider>
       </body>
     </html>
