@@ -202,7 +202,7 @@ const galleryItems: GalleryItem[] = [
 export default function Gallery() {
   const [activeMainCategory, setActiveMainCategory] = useState<string | null>(null)
   const [activeSubCategory, setActiveSubCategory] = useState<string | null>(null)
-  const [themeColor, setThemeColor] = useState("");
+  //const [themeColor, setThemeColor] = useState("");
   const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null)
 
   useEffect(() => {
@@ -225,13 +225,13 @@ export default function Gallery() {
             break
         }
 
-        setThemeColor(category.color)
+        //setThemeColor(category.color)
       }
     }
     else
     {
       rootElement.classList.remove("bg-green-50", "bg-blue-50", "bg-amber-50", "bg-pink-50")
-      setThemeColor("")
+      //setThemeColor("")
     }
 
     return () => {

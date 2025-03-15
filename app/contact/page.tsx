@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Mail, Phone, Twitter, X} from "lucide-react"
+import { Mail, X} from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 export default function ContactPage() {
