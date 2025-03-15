@@ -7,9 +7,9 @@ export default function Home() {
     <main className="container mx-auto px-4 py-12 md:py-24">
 
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">サディーのギャラリー</h1>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg md:text-xl">
-            サディーが訪ねたイベントの写真を整理したギャラリーです。
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">Sady's Memory Box</h1>
+          <p className="max-w-2xl mx-auto text-lg md:text-xl py-5">
+            サディーが訪ねたイベントでの写真などを残すギャラリーみたいなものです。
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Button asChild size="lg">
