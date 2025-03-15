@@ -1,22 +1,20 @@
 import Image from "next/image"
-import { Mail, Phone} from "lucide-react"
+import { Mail, Phone, Twitter, X} from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 export default function ContactPage() {
   return (
     <main>
-      <div className="container flex mx-auto py-10 items-center justify-center">
-        <Image src="/Images/ID6.png?height=500&width=500" alt="profile" width={500} height={500} />
-      </div>
-      <section className="container mx-auto px-4 md:py-4">
+      <section className="container mx-auto px-4 md:py-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight mb-4">連絡先</h1>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            用件があるならこちらへー
+          <div className="container flex mx-auto items-center justify-center">
+            <Image src="/Images/Profile.png?height=400&width=400" alt="profile" width={400} height={400} />
+          </div>
+          <p className="text-muted-foreground py-10 max-w-2xl mx-auto">
+            用件がありましたら気楽に連絡してください！
           </p>
         </div>
-
-
 
         <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
           <Card>
@@ -33,7 +31,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start">
-                  <Phone className="h-5 w-5 mr-3 text-primary" />
+                  <X className="h-5 w-5 mr-3 text-primary" />
                   <div>
                     <p className="font-medium">X（旧ツイッター）</p>
                     <p className="text-muted-foreground">&#64;Sady_trd</p>

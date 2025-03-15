@@ -123,4 +123,20 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .bg-green-50 {
+    background-color: rgba(240, 253, 244, 0.85);
+  }
+
+  .bg-blue-50 {
+    background-color: rgba(239, 246, 255, 0.85);
+  }
+
+  .bg-amber-50 {
+    background-color: rgba(255, 251, 235, 0.85);
+  }
+
+  .bg-pink-50 {
+    background-color: rgba(255, 219, 241, 0.85);
+  }
 }
