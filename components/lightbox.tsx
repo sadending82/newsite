@@ -15,6 +15,7 @@ type LightboxProps = {
 
 export default function Lightbox({ image, onClose }: LightboxProps) {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
+  const [isLoading, SetIsLoading] = useState(true)
 
   useEffect(() => {
     if (!image) return
@@ -67,6 +68,7 @@ export default function Lightbox({ image, onClose }: LightboxProps) {
           width={dimensions.width}
           height={dimensions.height}
           className="max-w-full max-h-[90vh] object-contain"
+          priority
         />
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white py-2 px-4 rounded">
           {image.title}

@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
@@ -204,6 +204,16 @@ export default function Gallery() {
   const [activeSubCategory, setActiveSubCategory] = useState<string | null>(null)
   //const [themeColor, setThemeColor] = useState("");
   const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null)
+  const [visibleItems, setVisibleItems] = useState<Set<number>>(new Set())
+  const observerRef = useRef<IntersectionObserver | null>(null)
+  const itemRefs = useRef<Map<number, HTMLDivElement>>(new Map())
+
+  // Filter items based on selected category
+  const filteredItems = galleryItems.filter((item) => {
+    if (!activeMainCategory) return true
+    if (!activeSubCategory) return item.mainCategory === activeMainCategory
+    return item.mainCategory === activeMainCategory && item.subCategory === activeSubCategory
+  })
 
   useEffect(() => {
     const rootElement = document.documentElement
@@ -239,6 +249,40 @@ export default function Gallery() {
     }
   }, [activeMainCategory])
 
+  useEffect(() => {
+    if(observerRef.current) {
+      observerRef.current.disconnect()
+    }
+
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const id = Number(entry.target.getAttribute("data-id"))
+          if (entry.isIntersecting) {
+            setVisibleItems((prev) => new Set(prev).add(id))
+          }
+        })
+      },
+      {
+        rootMargin: "200px",
+        threshold: 0.1
+      }
+    )
+  
+
+    itemRefs.current.forEach((ref) => {
+      if (ref && observerRef.current) {
+        observerRef.current.observe(ref)
+      }
+    })
+    
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect()
+      }
+    }
+  }, [filteredItems])
+
   const handleMainCategoryClick = (categoryId: string) => {
     if (activeMainCategory === categoryId) {
       setActiveMainCategory(null)
@@ -255,12 +299,7 @@ export default function Gallery() {
     setActiveSubCategory(categoryId === activeSubCategory ? null : categoryId)
   }
 
-  // Filter items based on selected category
-  const filteredItems = galleryItems.filter((item) => {
-    if (!activeMainCategory) return true
-    if (!activeSubCategory) return item.mainCategory === activeMainCategory
-    return item.mainCategory === activeMainCategory && item.subCategory === activeSubCategory
-  })
+
 
   const currentSubCategories = activeMainCategory
    ? mainCategories.find((cat) => cat.id === activeMainCategory)?.children || []
@@ -324,6 +363,7 @@ export default function Gallery() {
                     fill
                     className="object-contain"
                     sizes="(max-width: 768px) 100vw, 768px"
+                    priority
                   />
                 </div>
               </motion.div>
@@ -373,7 +413,9 @@ export default function Gallery() {
                    src={item.imageUrl || "/placeholder.svg"}
                    alt={item.title}
                    fill
-                   className="object-cover" />
+                   className="object-cover"
+                   loading="lazy"
+                   />
                 </div>
                 <CardContent className="p-4">
                   <h3 className="font-medium text-lg">{item.title}</h3>
