@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { useBackground } from "./BackgroundContext"
 import Lightbox from "@/components/lightbox"
 
 type Category = {
@@ -207,6 +208,7 @@ export default function Gallery() {
   const [visibleItems, setVisibleItems] = useState<Set<number>>(new Set())
   const observerRef = useRef<IntersectionObserver | null>(null)
   const itemRefs = useRef<Map<number, HTMLDivElement>>(new Map())
+  const { setBackground } = useBackground();
 
   // Filter items based on selected category
   const filteredItems = galleryItems.filter((item) => {
@@ -287,11 +289,23 @@ export default function Gallery() {
     if (activeMainCategory === categoryId) {
       setActiveMainCategory(null)
       setActiveSubCategory(null)
+      setBackground("/Images/ID1.png?height=1080&width=1920")
     }
     else
     {
       setActiveMainCategory(categoryId)
       setActiveSubCategory(null)
+      switch(categoryId)
+      {
+        case "mesugakissa":
+          setBackground("/Images/mesugakissa_bg.png?height=1080&width=1920")
+          break
+        default:
+          setBackground("/Images/ID1.png?height=1080&width=1920")
+          break
+      }
+
+      
     }
   }
 
@@ -408,12 +422,13 @@ export default function Gallery() {
               transition={{ duration: 0.3 }}
             >
               <Card className="overflow-hidden h-full cursor-pointer" onClick={() => setSelectedImage(item)}>
-                <div className="relative aspect-[4/3]">
+                <div className="relative aspect-[4/3] bg-muted/30">
                   <Image
                    src={item.imageUrl || "/placeholder.svg"}
                    alt={item.title}
                    fill
                    className="object-cover"
+                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                    loading="lazy"
                    />
                 </div>
