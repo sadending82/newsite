@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { useBackground } from "./BackgroundContext"
 import Lightbox from "@/components/lightbox"
+import {ChevronLeft, ChevronRight} from "lucide-react"
 
 type Category = {
   id: string
@@ -22,31 +23,34 @@ type GalleryItem = {
   id: number
   title: string
   mainCategory: string
-  subCategory: string
+  subCategory: string[]
   imageUrl: string
   date: string
 }
 
 const mainCategories: Category[] =[
   {
-    id: "life",
-    name: "日常",
-    color: "bg-green-100 text-green-900",
-    logoUrl: "",
-    children: [
-      {id: "friend", name: "フレンド", color: "", logoUrl: ""},
-      {id: "myself", name: "自撮り", color: "", logoUrl: ""},
-      {id: "view", name: "風景", color: "", logoUrl: ""}
-    ]
-  },
-  {
     id: "mesugakissa",
     name: "めすがきっさロぅリぃ",
-    color: "bg-pink-50 text-pink-900",
-    logoUrl: "/Images/mesugakissa_logo.jpg?height=400&width=400",
+    color: "bg-pink-300 text-pink-900",
+    logoUrl: "",
     children: [
-      {id: "hime", name: "結城ひめ", color: "", logoUrl: ""},
-      {id: "sarena", name: "天河サレナ", color: "", logoUrl: ""},
+      {id: "hime", name: "ひめ", color: "", logoUrl: ""}, //
+      {id: "sarena", name: "天河サレナ", color: "", logoUrl: ""}, //
+      {id: "meimeime", name: "めいめいはせっと", color: "", logoUrl: ""}, //
+      {id: "yusurin", name: "ゆすりん", color: "", logoUrl: ""}, //
+      {id: "nagi", name: "薙。", color: "", logoUrl: ""}, //
+      {id: "firanty", name: "Firanty", color: "", logoUrl: ""}, //
+      {id: "wagiri", name: "わぎり", color: "", logoUrl: ""}, //
+      {id: "rurio", name: "るりお君", color: "", logoUrl: ""}, 
+      {id: "muu", name: "むぅ", color: "", logoUrl: ""}, //
+      {id: "yayo", name: "やよちゃん", color: "", logoUrl: ""},
+      {id: "tococo", name: "とここ", color: "", logoUrl: ""},
+      {id: "kiruto", name: "キルト", color: "", logoUrl: ""},
+      {id: "ganmon", name: "がんもん", color: "", logoUrl: ""},
+      {id: "sutoai", name: "すとあい", color: "", logoUrl: ""},
+      {id: "jyonko", name: "あまちじょんこ", color: "", logoUrl: ""},
+      {id: "miyasaka", name: "宮坂稲荷", color:"", logoUrl: ""} //
     ]
   }
 ]
@@ -55,147 +59,275 @@ const mainCategories: Category[] =[
 const galleryItems: GalleryItem[] = [
   {
     id: 1,
-    title: "江ノ島1",
-    mainCategory: "life",
-    subCategory: "view",
-    imageUrl: "/Images/ID1.png?height=400&width=600",
-    date: "2025-03-06",
+    title: "ひめ",
+    mainCategory: "mesugakissa",
+    subCategory: ["hime",],
+    imageUrl: "/Images/ID1.png",
+    date: "2025-02-19",
   },
   {
     id: 2,
-    title: "江ノ島2",
-    mainCategory: "life",
-    subCategory: "view",
-    imageUrl: "/Images/ID2.png?height=400&width=600",
-    date: "2025-03-06",
+    title: "ひめ",
+    mainCategory: "mesugakissa",
+    subCategory: ["hime",],
+    imageUrl: "/Images/ID2.png",
+    date: "2025-02-19",
   },
   {
     id: 3,
-    title: "真冬三...姉妹？兄弟？",
-    mainCategory: "life",
-    subCategory: "friend",
-    imageUrl: "/Images/ID3.png?height=400&width=600",
-    date: "2025-03-06",
+    title: "ひめ",
+    mainCategory: "mesugakissa",
+    subCategory: ["hime",],
+    imageUrl: "/Images/ID3.png",
+    date: "2025-02-19",
   },
   {
     id: 4,
-    title: "No Title",
-    mainCategory: "life",
-    subCategory: "myself",
-    imageUrl: "/Images/ID4.png?height=400&width=600",
-    date: "2025-01-14",
+    title: "天河サレナ",
+    mainCategory: "mesugakissa",
+    subCategory: ["sarena",],
+    imageUrl: "/Images/ID4.png",
+    date: "2025-03-05",
   },
   {
     id: 5,
-    title: "No Title",
-    mainCategory: "life",
-    subCategory: "myself",
-    imageUrl: "/Images/ID5.png?height=400&width=600",
-    date: "2025-01-14",
+    title: "天河サレナ",
+    mainCategory: "mesugakissa",
+    subCategory: ["sarena",],
+    imageUrl: "/Images/ID5.png",
+    date: "2025-03-05",
   },
   {
     id: 6,
-    title: "まだなのかなぁ？",
-    mainCategory: "life",
-    subCategory: "myself",
-    imageUrl: "/Images/ID6.png?height=400&width=600",
-    date: "2025-01-15",
+    title: "天河サレナ",
+    mainCategory: "mesugakissa",
+    subCategory: ["sarena",],
+    imageUrl: "/Images/ID6.png",
+    date: "2024-12-04",
   },
   {
     id: 7,
-    title: "No Title",
-    mainCategory: "life",
-    subCategory: "myself",
-    imageUrl: "/Images/ID7.png?height=400&width=600",
-    date: "2025-01-18",
+    title: "ひめ",
+    mainCategory: "mesugakissa",
+    subCategory: ["hime",],
+    imageUrl: "/Images/ID7.png",
+    date: "2024-12-04",
   },
   {
     id: 8,
-    title: "結城ひめ",
+    title: "ひめ",
     mainCategory: "mesugakissa",
-    subCategory: "hime",
-    imageUrl: "/Images/ID8.png?height=400&width=600",
-    date: "2025-02-19",
+    subCategory: ["hime",],
+    imageUrl: "/Images/ID8.png",
+    date: "2024-07-10",
   },
   {
     id: 9,
-    title: "結城ひめ",
+    title: "天河サレナ",
     mainCategory: "mesugakissa",
-    subCategory: "hime",
-    imageUrl: "/Images/ID9.png?height=400&width=600",
-    date: "2025-02-19",
+    subCategory: ["sarena",],
+    imageUrl: "/Images/ID9.png",
+    date: "2024-10-30",
   },
   {
     id: 10,
-    title: "結城ひめ",
+    title: "天河サレナ",
     mainCategory: "mesugakissa",
-    subCategory: "hime",
-    imageUrl: "/Images/ID10.png?height=400&width=600",
-    date: "2025-02-19",
+    subCategory: ["sarena",],
+    imageUrl: "/Images/ID10.png",
+    date: "2024-11-13",
   },
   {
     id: 11,
     title: "天河サレナ",
     mainCategory: "mesugakissa",
-    subCategory: "sarena",
-    imageUrl: "/Images/ID11.png?height=400&width=600",
-    date: "2025-03-05",
+    subCategory: ["sarena",],
+    imageUrl: "/Images/ID11.png",
+    date: "2024-11-28",
   },
   {
     id: 12,
-    title: "天河サレナ",
+    title: "めいめいはせっと",
     mainCategory: "mesugakissa",
-    subCategory: "sarena",
-    imageUrl: "/Images/ID12.png?height=400&width=600",
+    subCategory: ["meimeime",],
+    imageUrl: "/Images/ID12.png",
     date: "2025-03-05",
   },
   {
     id: 13,
-    title: "天河サレナ",
+    title: "ゆすりん",
     mainCategory: "mesugakissa",
-    subCategory: "sarena",
-    imageUrl: "/Images/ID13.png?height=400&width=600",
-    date: "2024-12-04",
+    subCategory: ["yusurin",],
+    imageUrl: "/Images/ID13.png",
+    date: "2025-03-05",
   },
   {
     id: 14,
-    title: "結城ひめ",
+    title: "ゆすりん",
     mainCategory: "mesugakissa",
-    subCategory: "hime",
-    imageUrl: "/Images/ID14.png?height=400&width=600",
-    date: "2024-12-04",
+    subCategory: ["yusurin",],
+    imageUrl: "/Images/ID14.png",
+    date: "2025-03-05",
   },
   {
     id: 15,
-    title: "結城ひめ",
+    title: "薙。",
     mainCategory: "mesugakissa",
-    subCategory: "hime",
-    imageUrl: "/Images/ID15.png?height=400&width=600",
-    date: "2024-07-10",
+    subCategory: ["nagi",],
+    imageUrl: "/Images/ID15.png",
+    date: "2025-03-05",
   },
   {
     id: 16,
-    title: "天河サレナ",
+    title: "Firanty",
     mainCategory: "mesugakissa",
-    subCategory: "sarena",
-    imageUrl: "/Images/ID16.png?height=400&width=600",
-    date: "2024-10-30",
+    subCategory: ["firanty",],
+    imageUrl: "/Images/ID16.png",
+    date: "2025-03-05",
   },
   {
     id: 17,
-    title: "天河サレナ",
+    title: "Firanty",
     mainCategory: "mesugakissa",
-    subCategory: "sarena",
-    imageUrl: "/Images/ID17.png?height=400&width=600",
-    date: "2024-11-13",
+    subCategory: ["firanty",],
+    imageUrl: "/Images/ID17.png",
+    date: "2025-03-05",
   },
   {
     id: 18,
+    title: "わぎり",
+    mainCategory: "mesugakissa",
+    subCategory: ["wagiri",],
+    imageUrl: "/Images/ID18.png",
+    date: "2025-03-05",
+  },
+  {
+    id: 19,
+    title: "わぎり",
+    mainCategory: "mesugakissa",
+    subCategory: ["wagiri",],
+    imageUrl: "/Images/ID19.png",
+    date: "2025-03-05",
+  },
+  {
+    id: 20,
+    title: "むぅ",
+    mainCategory: "mesugakissa",
+    subCategory: ["muu",],
+    imageUrl: "/Images/ID20.png",
+    date: "2025-03-05",
+  },
+  {
+    id: 21,
+    title: "宮坂稲荷",
+    mainCategory: "mesugakissa",
+    subCategory: ["miyasaka",],
+    imageUrl: "/Images/ID21.png",
+    date: "2025-03-05",
+  },
+  {
+    id: 22,
     title: "天河サレナ",
     mainCategory: "mesugakissa",
-    subCategory: "sarena",
-    imageUrl: "/Images/ID18.png?height=400&width=600",
-    date: "2024-11-28",
+    subCategory: ["sarena",],
+    imageUrl: "/Images/ID22.png",
+    date: "2025-03-12",
+  },
+  {
+    id: 23,
+    title: "やよちゃん",
+    mainCategory: "mesugakissa",
+    subCategory: ["yayo",],
+    imageUrl: "/Images/ID23.png",
+    date: "2025-03-12",
+  },
+  {
+    id: 24,
+    title: "るりお君",
+    mainCategory: "mesugakissa",
+    subCategory: ["rurio",],
+    imageUrl: "/Images/ID24.png",
+    date: "2025-03-12",
+  },
+  {
+    id: 25,
+    title: "るりお君",
+    mainCategory: "mesugakissa",
+    subCategory: ["rurio",],
+    imageUrl: "/Images/ID25.png",
+    date: "2025-03-12",
+  },
+  {
+    id: 26,
+    title: "とここ",
+    mainCategory: "mesugakissa",
+    subCategory: ["tococo",],
+    imageUrl: "/Images/ID26.png",
+    date: "2025-03-12",
+  },
+  {
+    id: 27,
+    title: "むぅ",
+    mainCategory: "mesugakissa",
+    subCategory: ["muu",],
+    imageUrl: "/Images/ID27.png",
+    date: "2025-03-12",
+  },
+  {
+    id: 28,
+    title: "天河サレナ",
+    mainCategory: "mesugakissa",
+    subCategory: ["sarena",],
+    imageUrl: "/Images/ID28.png",
+    date: "2025-03-12",
+  },
+  {
+    id: 29,
+    title: "ひめ",
+    mainCategory: "mesugakissa",
+    subCategory: ["hime",],
+    imageUrl: "/Images/ID29.png",
+    date: "2025-03-12",
+  },
+  {
+    id: 30,
+    title: "ひめ",
+    mainCategory: "mesugakissa",
+    subCategory: ["hime",],
+    imageUrl: "/Images/ID30.png",
+    date: "2025-03-12",
+  },
+  {
+    id: 31,
+    title: "キルト",
+    mainCategory: "mesugakissa",
+    subCategory: ["kiruto",],
+    imageUrl: "/Images/ID31.png",
+    date: "2025-02-12",
+  },
+  {
+    id: 32,
+    title: "あまちじょんこ",
+    mainCategory: "mesugakissa",
+    subCategory: ["jyonko",],
+    imageUrl: "/Images/ID32.png",
+    date: "2025-02-12",
+  },
+  {
+    id: 33,
+    title: "がんもん",
+    mainCategory: "mesugakissa",
+    subCategory: ["ganmon",],
+    imageUrl: "/Images/ID33.png",
+    date: "2025-02-12",
+  },
+  {
+    id: 34,
+    title: "すとあい",
+    mainCategory: "mesugakissa",
+    subCategory: ["sutoai",],
+    imageUrl: "/Images/ID34.png",
+    date: "2025-02-19",
   },
 ]
 
@@ -205,17 +337,37 @@ export default function Gallery() {
   const [activeSubCategory, setActiveSubCategory] = useState<string | null>(null)
   //const [themeColor, setThemeColor] = useState("");
   const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null)
-  const [, setVisibleItems] = useState<Set<number>>(new Set())
-  const observerRef = useRef<IntersectionObserver | null>(null)
-  const itemRefs = useRef<Map<number, HTMLDivElement>>(new Map())
+  const [currentPage, setCurrentPage] = useState(1)
+  const itemsPerPage = 12
   const { setBackground } = useBackground();
 
   // Filter items based on selected category
-  const filteredItems = galleryItems.filter((item) => {
+  const filteredAndSortedItems = galleryItems.filter((item) => {
     if (!activeMainCategory) return true
-    if (!activeSubCategory) return item.mainCategory === activeMainCategory
-    return item.mainCategory === activeMainCategory && item.subCategory === activeSubCategory
+
+    if (item.mainCategory !== activeMainCategory) return false
+
+    if (!activeSubCategory) return true
+
+    return item.subCategory.includes(activeSubCategory)
   })
+  .sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime()
+  })
+
+  const totalPages = Math.ceil(filteredAndSortedItems.length / itemsPerPage)
+  const paginatedItems = filteredAndSortedItems.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }, [currentPage])
+
+  useEffect(() => {
+    setCurrentPage(1)
+  }, [activeMainCategory, activeSubCategory])
 
   useEffect(() => {
     const rootElement = document.documentElement
@@ -251,40 +403,6 @@ export default function Gallery() {
     }
   }, [activeMainCategory])
 
-  useEffect(() => {
-    if(observerRef.current) {
-      observerRef.current.disconnect()
-    }
-
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const id = Number(entry.target.getAttribute("data-id"))
-          if (entry.isIntersecting) {
-            setVisibleItems((prev) => new Set(prev).add(id))
-          }
-        })
-      },
-      {
-        rootMargin: "200px",
-        threshold: 0.1
-      }
-    )
-  
-
-    itemRefs.current.forEach((ref) => {
-      if (ref && observerRef.current) {
-        observerRef.current.observe(ref)
-      }
-    })
-    
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect()
-      }
-    }
-  }, [filteredItems])
-
   const handleMainCategoryClick = (categoryId: string) => {
     if (activeMainCategory === categoryId) {
       setActiveMainCategory(null)
@@ -304,7 +422,6 @@ export default function Gallery() {
           setBackground("/Images/ID1.png?height=1080&width=1920")
           break
       }
-
       
     }
   }
@@ -313,7 +430,10 @@ export default function Gallery() {
     setActiveSubCategory(categoryId === activeSubCategory ? null : categoryId)
   }
 
-
+  const handlePageChange = (page: number) => {
+    if (page < 1 || page > totalPages) return
+    setCurrentPage(page)
+  }
 
   const currentSubCategories = activeMainCategory
    ? mainCategories.find((cat) => cat.id === activeMainCategory)?.children || []
@@ -337,7 +457,7 @@ export default function Gallery() {
               "mb-2",
             )}
           >
-            全て
+            全カテゴリー
           </Button>
           {mainCategories.map((category)=> (
             <Button
@@ -412,7 +532,7 @@ export default function Gallery() {
       {/* gallery grid */}
       <AnimatePresence>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {filteredItems.map((item) => (
+          {paginatedItems.map((item) => (
             <motion.div
               key={item.id}
               layout
@@ -424,12 +544,13 @@ export default function Gallery() {
               <Card className="overflow-hidden h-full cursor-pointer" onClick={() => setSelectedImage(item)}>
                 <div className="relative aspect-[4/3] bg-muted/30">
                   <Image
-                   src={item.imageUrl || "/placeholder.svg"}
+                   src={`/smallImages/ID${item.id}.png` || "/placeholder.svg"}
                    alt={item.title}
                    fill
                    className="object-cover"
                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                    loading="lazy"
+                   decoding="async"
                    />
                 </div>
                 <CardContent className="p-4">
@@ -441,6 +562,65 @@ export default function Gallery() {
           ))}
         </div>
       </AnimatePresence>
+
+      {totalPages > 1 && (
+        <div className="flex justify-center items-center gap-2 mt-10">
+          <Button
+            onClick={() => handlePageChange(currentPage - 1)}
+            disabled={currentPage === 1}
+            className= {currentPage === 1 ? "text-muted-foreground cursor-not-allowed" : "text-primary"}
+            variant={currentPage === 1 ? "default" : "outline"}
+            aria-label="Prev"
+          >
+            <ChevronLeft className="h-5 w-5"/>
+          </Button>
+          
+          <div className="flex items-center gap-1">
+            {Array.from({ length: totalPages}, (_, i) => i + 1).map((page) => {
+              if (page ===1 || page === totalPages || (page >= currentPage - 2 && page <= currentPage + 2)) {
+                return (
+                  <Button
+                    key={page}
+                    onClick={() => handlePageChange(page)}
+                    //className={currentPage === page ? "text-primary-foreground" : ""}
+                    variant={currentPage === page ? "default" : "outline"}
+                  >
+                    {page}
+                  </Button>
+                )
+              }
+
+              if (
+                (page === currentPage - 3 && currentPage > 3) ||
+                (page === currentPage + 3 && currentPage < totalPages - 2)
+              ) {
+                return (
+                  <span key={page} className="px-1">
+                    ...
+                  </span>
+                )
+              }
+
+              return null
+            })}
+          </div>
+
+          <Button
+            onClick={() => handlePageChange(currentPage + 1)}
+            disabled={currentPage === totalPages}
+            className= {currentPage === totalPages ? "text-muted-foreground cursor-not-allowed" : "primary"}
+            variant={currentPage === totalPages ? "default" : "outline"}
+            aria-label="Next"
+          >
+            <ChevronRight className="h-5 w-5"/>
+          </Button>
+        </div>
+      )}
+
+      <div className="text-center text-sm text-muted-foreground">
+        {filteredAndSortedItems.length}個の写真の中、{(currentPage - 1) * itemsPerPage + 1}から
+        {Math.min(currentPage * itemsPerPage, filteredAndSortedItems.length)}の写真を表示中
+      </div>
 
       {selectedImage && <Lightbox image={selectedImage} onClose={() => setSelectedImage(null)} />}
     </div>
