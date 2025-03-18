@@ -143,7 +143,7 @@ const galleryItems: GalleryItem[] = [
     mainCategory: "mesugakissa",
     subCategory: ["sarena",],
     imageUrl: "/Images/ID11.png",
-    date: "2024-11-28",
+    date: "2024-11-13",
   },
   {
     id: 12,

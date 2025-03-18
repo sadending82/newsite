@@ -14,7 +14,32 @@ type LightboxProps = {
 }
 
 export default function Lightbox({ image, onClose }: LightboxProps) {
+  const [isLoading, setIsLoading] = useState(true)
+  const [loadingProgress, setLoadingProgress] = useState(0)
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
+
+  useEffect(() => {
+    if(!image) return
+
+    setIsLoading(true)
+    setLoadingProgress(0)
+
+    const interval = setInterval(() => {
+      setLoadingProgress((prev) => {
+        if (!isLoading && prev >= 100) {
+          clearInterval(interval)
+          return 100
+        }
+        if (isLoading) {
+          const increment = Math.max(1, 10 * (1 - prev / 100))
+          return Math.min(90, prev + increment)
+        }
+        return Math.min(100 ,prev + 10)
+      })
+    }, 200)
+
+    return () => clearInterval(interval)
+  }, [image, isLoading])
 
   useEffect(() => {
     if (!image) return
@@ -48,6 +73,10 @@ export default function Lightbox({ image, onClose }: LightboxProps) {
     }
   }, [onClose])
 
+  const handleImageLoadingComplete = () => {
+    setIsLoading(true)
+  }
+
   if (!image) return null
 
   return (
@@ -61,17 +90,33 @@ export default function Lightbox({ image, onClose }: LightboxProps) {
         >
           <X className="h-6 w-6" />
         </Button>
-        <Image
-          src={image.imageUrl || "/placeholder.svg"}
-          alt={image.title}
-          width={dimensions.width}
-          height={dimensions.height}
-          className="max-w-full max-h-[90vh] object-contain"
-          priority
-        />
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white py-2 px-4 rounded">
-          {image.title}
-        </div>
+        <div className="relative">
+          {loadingProgress < 100 && (
+            <div className="apsolute inset=0 flex-col items-center justify-center
+             z-10 bg-black/50 rounded-md">
+              <div className="w-64 h-2 bg-gray-700 rounded-full overflow-hidden mb-2">
+                <div
+                  className="h-full bg-white transition-all duration-300 ease-out"
+                  style={{width:`${loadingProgress}`}}
+                />
+              </div>
+              <p className="text-white text-sm">{`${Math.round(loadingProgress)}%`}</p>
+             </div>
+          )}
+
+          <Image
+            src={image.imageUrl || "/placeholder.svg"}
+            alt={image.title}
+            width={dimensions.width}
+            height={dimensions.height}
+            className="max-w-full max-h-[90vh] object-contain"
+            priority
+            onLoadingComplete={handleImageLoadingComplete}
+          />
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white py-2 px-4 rounded">
+            {image.title}
+          </div>
+          </div>
       </div>
       <Button variant="secondary" className="absolute bottom-4 right-4" onClick={onClose}>
         閉じる
