@@ -5,21 +5,28 @@ import Image from "next/image"
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
+type GalleryItem = {
+  id: number
+  title: string
+  mainCategory: string
+  subCategories: string[]
+  imageUrl: string
+  date: string
+}
+
 type LightboxProps = {
-  image: {
-    title: string
-    imageUrl: string
-  } | null
+  image: GalleryItem
+  isOpen: boolean
   onClose: () => void
 }
 
-export default function Lightbox({ image, onClose }: LightboxProps) {
+export default function Lightbox({ image, isOpen, onClose }: LightboxProps) {
   const [isLoading, setIsLoading] = useState(true)
   const [loadingProgress, setLoadingProgress] = useState(0)
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
 
   useEffect(() => {
-    if(!image) return
+    if (isOpen){
 
     setIsLoading(true)
     setLoadingProgress(0)
@@ -32,14 +39,28 @@ export default function Lightbox({ image, onClose }: LightboxProps) {
         }
         if (isLoading) {
           const increment = Math.max(1, 10 * (1 - prev / 100))
-          return Math.min(90, prev + increment)
+          return Math.min(99, prev + increment)
         }
         return Math.min(100 ,prev + 10)
       })
-    }, 200)
+    }, 300)
 
     return () => clearInterval(interval)
-  }, [image, isLoading])
+  }
+  }, [isOpen, image, isLoading])
+
+  // useEffect(() => {
+  //   if (isOpen) {
+  //     document.body.style.overflow = "hidden"
+  //   }
+  //   else {
+  //     document.body.style.overflow = ""
+  //   }
+
+  //   return () => {
+  //     document.body.style.overflow = ""
+  //   }
+  // }, [isOpen])
 
   useEffect(() => {
     if (!image) return
@@ -67,29 +88,39 @@ export default function Lightbox({ image, onClose }: LightboxProps) {
       }
     }
 
-    document.addEventListener("keydown", handleKeyDown)
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown)
+    if (isOpen) {
+      window.addEventListener("keydown", handleKeyDown)
     }
-  }, [onClose])
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown)
+    }
+  }, [isOpen, onClose])
 
   const handleImageLoadingComplete = () => {
-    setIsLoading(true)
+    setIsLoading(false)
   }
 
-  if (!image) return null
+  if (!isOpen || !image) {
+    return null
+  }
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-      <div className="relative max-w-[90vw] max-h-[90vh]">
+    <div
+     className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-90"
+     onClick={onClose}
+    >
+      <div className="relative max-w-[90vw] max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
         <Button
           variant="ghost"
           size="icon"
           className="absolute top-2 right-2 text-white bg-black bg-opacity-50 hover:bg-opacity-75"
           onClick={onClose}
+          aria-label="closeLightbox"
         >
-          <X className="h-6 w-6" />
+          <X className="h-6 w-6 text=white" />
         </Button>
+        
         <div className="relative">
           {loadingProgress < 100 && (
             <div className="apsolute inset=0 flex-col items-center justify-center

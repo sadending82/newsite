@@ -23,7 +23,7 @@ type GalleryItem = {
   id: number
   title: string
   mainCategory: string
-  subCategory: string[]
+  subCategories: string[]
   imageUrl: string
   date: string
 }
@@ -61,7 +61,7 @@ const galleryItems: GalleryItem[] = [
     id: 1,
     title: "ひめ",
     mainCategory: "mesugakissa",
-    subCategory: ["hime",],
+    subCategories: ["hime",],
     imageUrl: "/Images/ID1.png",
     date: "2025-02-19",
   },
@@ -69,7 +69,7 @@ const galleryItems: GalleryItem[] = [
     id: 2,
     title: "ひめ",
     mainCategory: "mesugakissa",
-    subCategory: ["hime",],
+    subCategories: ["hime",],
     imageUrl: "/Images/ID2.png",
     date: "2025-02-19",
   },
@@ -77,7 +77,7 @@ const galleryItems: GalleryItem[] = [
     id: 3,
     title: "ひめ",
     mainCategory: "mesugakissa",
-    subCategory: ["hime",],
+    subCategories: ["hime",],
     imageUrl: "/Images/ID3.png",
     date: "2025-02-19",
   },
@@ -85,7 +85,7 @@ const galleryItems: GalleryItem[] = [
     id: 4,
     title: "天河サレナ",
     mainCategory: "mesugakissa",
-    subCategory: ["sarena",],
+    subCategories: ["sarena",],
     imageUrl: "/Images/ID4.png",
     date: "2025-03-05",
   },
@@ -93,7 +93,7 @@ const galleryItems: GalleryItem[] = [
     id: 5,
     title: "天河サレナ",
     mainCategory: "mesugakissa",
-    subCategory: ["sarena",],
+    subCategories: ["sarena",],
     imageUrl: "/Images/ID5.png",
     date: "2025-03-05",
   },
@@ -101,7 +101,7 @@ const galleryItems: GalleryItem[] = [
     id: 6,
     title: "天河サレナ",
     mainCategory: "mesugakissa",
-    subCategory: ["sarena",],
+    subCategories: ["sarena",],
     imageUrl: "/Images/ID6.png",
     date: "2024-12-04",
   },
@@ -109,7 +109,7 @@ const galleryItems: GalleryItem[] = [
     id: 7,
     title: "ひめ",
     mainCategory: "mesugakissa",
-    subCategory: ["hime",],
+    subCategories: ["hime",],
     imageUrl: "/Images/ID7.png",
     date: "2024-12-04",
   },
@@ -117,7 +117,7 @@ const galleryItems: GalleryItem[] = [
     id: 8,
     title: "ひめ",
     mainCategory: "mesugakissa",
-    subCategory: ["hime",],
+    subCategories: ["hime",],
     imageUrl: "/Images/ID8.png",
     date: "2024-07-10",
   },
@@ -125,7 +125,7 @@ const galleryItems: GalleryItem[] = [
     id: 9,
     title: "天河サレナ",
     mainCategory: "mesugakissa",
-    subCategory: ["sarena",],
+    subCategories: ["sarena",],
     imageUrl: "/Images/ID9.png",
     date: "2024-10-30",
   },
@@ -133,7 +133,7 @@ const galleryItems: GalleryItem[] = [
     id: 10,
     title: "天河サレナ",
     mainCategory: "mesugakissa",
-    subCategory: ["sarena",],
+    subCategories: ["sarena",],
     imageUrl: "/Images/ID10.png",
     date: "2024-11-13",
   },
@@ -141,7 +141,7 @@ const galleryItems: GalleryItem[] = [
     id: 11,
     title: "天河サレナ",
     mainCategory: "mesugakissa",
-    subCategory: ["sarena",],
+    subCategories: ["sarena",],
     imageUrl: "/Images/ID11.png",
     date: "2024-11-13",
   },
@@ -149,7 +149,7 @@ const galleryItems: GalleryItem[] = [
     id: 12,
     title: "めいめいはせっと",
     mainCategory: "mesugakissa",
-    subCategory: ["meimeime",],
+    subCategories: ["meimeime",],
     imageUrl: "/Images/ID12.png",
     date: "2025-03-05",
   },
@@ -157,7 +157,7 @@ const galleryItems: GalleryItem[] = [
     id: 13,
     title: "ゆすりん",
     mainCategory: "mesugakissa",
-    subCategory: ["yusurin",],
+    subCategories: ["yusurin",],
     imageUrl: "/Images/ID13.png",
     date: "2025-03-05",
   },
@@ -165,7 +165,7 @@ const galleryItems: GalleryItem[] = [
     id: 14,
     title: "ゆすりん",
     mainCategory: "mesugakissa",
-    subCategory: ["yusurin",],
+    subCategories: ["yusurin",],
     imageUrl: "/Images/ID14.png",
     date: "2025-03-05",
   },
@@ -173,7 +173,7 @@ const galleryItems: GalleryItem[] = [
     id: 15,
     title: "薙。",
     mainCategory: "mesugakissa",
-    subCategory: ["nagi",],
+    subCategories: ["nagi",],
     imageUrl: "/Images/ID15.png",
     date: "2025-03-05",
   },
@@ -181,7 +181,7 @@ const galleryItems: GalleryItem[] = [
     id: 16,
     title: "Firanty",
     mainCategory: "mesugakissa",
-    subCategory: ["firanty",],
+    subCategories: ["firanty",],
     imageUrl: "/Images/ID16.png",
     date: "2025-03-05",
   },
@@ -189,7 +189,7 @@ const galleryItems: GalleryItem[] = [
     id: 17,
     title: "Firanty",
     mainCategory: "mesugakissa",
-    subCategory: ["firanty",],
+    subCategories: ["firanty",],
     imageUrl: "/Images/ID17.png",
     date: "2025-03-05",
   },
@@ -197,7 +197,7 @@ const galleryItems: GalleryItem[] = [
     id: 18,
     title: "わぎり",
     mainCategory: "mesugakissa",
-    subCategory: ["wagiri",],
+    subCategories: ["wagiri",],
     imageUrl: "/Images/ID18.png",
     date: "2025-03-05",
   },
@@ -205,7 +205,7 @@ const galleryItems: GalleryItem[] = [
     id: 19,
     title: "わぎり",
     mainCategory: "mesugakissa",
-    subCategory: ["wagiri",],
+    subCategories: ["wagiri",],
     imageUrl: "/Images/ID19.png",
     date: "2025-03-05",
   },
@@ -213,7 +213,7 @@ const galleryItems: GalleryItem[] = [
     id: 20,
     title: "むぅ",
     mainCategory: "mesugakissa",
-    subCategory: ["muu",],
+    subCategories: ["muu",],
     imageUrl: "/Images/ID20.png",
     date: "2025-03-05",
   },
@@ -221,7 +221,7 @@ const galleryItems: GalleryItem[] = [
     id: 21,
     title: "宮坂稲荷",
     mainCategory: "mesugakissa",
-    subCategory: ["miyasaka",],
+    subCategories: ["miyasaka",],
     imageUrl: "/Images/ID21.png",
     date: "2025-03-05",
   },
@@ -229,7 +229,7 @@ const galleryItems: GalleryItem[] = [
     id: 22,
     title: "天河サレナ",
     mainCategory: "mesugakissa",
-    subCategory: ["sarena",],
+    subCategories: ["sarena",],
     imageUrl: "/Images/ID22.png",
     date: "2025-03-12",
   },
@@ -237,7 +237,7 @@ const galleryItems: GalleryItem[] = [
     id: 23,
     title: "やよちゃん",
     mainCategory: "mesugakissa",
-    subCategory: ["yayo",],
+    subCategories: ["yayo",],
     imageUrl: "/Images/ID23.png",
     date: "2025-03-12",
   },
@@ -245,7 +245,7 @@ const galleryItems: GalleryItem[] = [
     id: 24,
     title: "るりお君",
     mainCategory: "mesugakissa",
-    subCategory: ["rurio",],
+    subCategories: ["rurio",],
     imageUrl: "/Images/ID24.png",
     date: "2025-03-12",
   },
@@ -253,7 +253,7 @@ const galleryItems: GalleryItem[] = [
     id: 25,
     title: "るりお君",
     mainCategory: "mesugakissa",
-    subCategory: ["rurio",],
+    subCategories: ["rurio",],
     imageUrl: "/Images/ID25.png",
     date: "2025-03-12",
   },
@@ -261,7 +261,7 @@ const galleryItems: GalleryItem[] = [
     id: 26,
     title: "とここ",
     mainCategory: "mesugakissa",
-    subCategory: ["tococo",],
+    subCategories: ["tococo",],
     imageUrl: "/Images/ID26.png",
     date: "2025-03-12",
   },
@@ -269,7 +269,7 @@ const galleryItems: GalleryItem[] = [
     id: 27,
     title: "むぅ",
     mainCategory: "mesugakissa",
-    subCategory: ["muu",],
+    subCategories: ["muu",],
     imageUrl: "/Images/ID27.png",
     date: "2025-03-12",
   },
@@ -277,7 +277,7 @@ const galleryItems: GalleryItem[] = [
     id: 28,
     title: "天河サレナ",
     mainCategory: "mesugakissa",
-    subCategory: ["sarena",],
+    subCategories: ["sarena",],
     imageUrl: "/Images/ID28.png",
     date: "2025-03-12",
   },
@@ -285,7 +285,7 @@ const galleryItems: GalleryItem[] = [
     id: 29,
     title: "ひめ",
     mainCategory: "mesugakissa",
-    subCategory: ["hime",],
+    subCategories: ["hime",],
     imageUrl: "/Images/ID29.png",
     date: "2025-03-12",
   },
@@ -293,7 +293,7 @@ const galleryItems: GalleryItem[] = [
     id: 30,
     title: "ひめ",
     mainCategory: "mesugakissa",
-    subCategory: ["hime",],
+    subCategories: ["hime",],
     imageUrl: "/Images/ID30.png",
     date: "2025-03-12",
   },
@@ -301,7 +301,7 @@ const galleryItems: GalleryItem[] = [
     id: 31,
     title: "キルト",
     mainCategory: "mesugakissa",
-    subCategory: ["kiruto",],
+    subCategories: ["kiruto",],
     imageUrl: "/Images/ID31.png",
     date: "2025-02-12",
   },
@@ -309,7 +309,7 @@ const galleryItems: GalleryItem[] = [
     id: 32,
     title: "あまちじょんこ",
     mainCategory: "mesugakissa",
-    subCategory: ["jyonko",],
+    subCategories: ["jyonko",],
     imageUrl: "/Images/ID32.png",
     date: "2025-02-12",
   },
@@ -317,7 +317,7 @@ const galleryItems: GalleryItem[] = [
     id: 33,
     title: "がんもん",
     mainCategory: "mesugakissa",
-    subCategory: ["ganmon",],
+    subCategories: ["ganmon",],
     imageUrl: "/Images/ID33.png",
     date: "2025-02-12",
   },
@@ -325,7 +325,7 @@ const galleryItems: GalleryItem[] = [
     id: 34,
     title: "すとあい",
     mainCategory: "mesugakissa",
-    subCategory: ["sutoai",],
+    subCategories: ["sutoai",],
     imageUrl: "/Images/ID34.png",
     date: "2025-02-19",
   },
@@ -336,7 +336,9 @@ export default function Gallery() {
   const [activeMainCategory, setActiveMainCategory] = useState<string | null>(null)
   const [activeSubCategory, setActiveSubCategory] = useState<string | null>(null)
   //const [themeColor, setThemeColor] = useState("");
-  const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null)
+  const [lightboxOpen, SetLightboxOpen] = useState(false)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
   const [currentPage, setCurrentPage] = useState(1)
   const itemsPerPage = 12
   const { setBackground } = useBackground();
@@ -349,7 +351,7 @@ export default function Gallery() {
 
     if (!activeSubCategory) return true
 
-    return item.subCategory.includes(activeSubCategory)
+    return item.subCategories.includes(activeSubCategory)
   })
   .sort((a, b) => {
     return new Date(b.date).getTime() - new Date(a.date).getTime()
@@ -428,6 +430,15 @@ export default function Gallery() {
 
   const handleSubCategoryClick = (categoryId: string) => {
     setActiveSubCategory(categoryId === activeSubCategory ? null : categoryId)
+  }
+
+  const handleImageClick = (index: number) => {
+    setCurrentImageIndex(index)
+    SetLightboxOpen(true)
+  }
+
+  const handleCloseLightbox = () => {
+    SetLightboxOpen(false)
   }
 
   const handlePageChange = (page: number) => {
@@ -532,7 +543,7 @@ export default function Gallery() {
       {/* gallery grid */}
       <AnimatePresence>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {paginatedItems.map((item) => (
+          {paginatedItems.map((item, index) => (
             <motion.div
               key={item.id}
               layout
@@ -540,8 +551,9 @@ export default function Gallery() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
+              onClick={() => handleImageClick(index)}
             >
-              <Card className="overflow-hidden h-full cursor-pointer" onClick={() => setSelectedImage(item)}>
+              <Card className="overflow-hidden h-full cursor-pointer" >
                 <div className="relative aspect-[4/3] bg-muted/30">
                   <Image
                    src={`/smallImages/ID${item.id}.png` || "/placeholder.svg"}
@@ -622,7 +634,11 @@ export default function Gallery() {
         {Math.min(currentPage * itemsPerPage, filteredAndSortedItems.length)}の写真を表示中
       </div>
 
-      {selectedImage && <Lightbox image={selectedImage} onClose={() => setSelectedImage(null)} />}
+      {
+      lightboxOpen && paginatedItems.length > 0 && (
+        <Lightbox image={paginatedItems[currentImageIndex]} isOpen={lightboxOpen}
+         onClose={handleCloseLightbox}/>
+      )}
     </div>
   )
 }
