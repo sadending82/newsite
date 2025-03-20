@@ -46,7 +46,7 @@ export default function Lightbox({ image, isOpen, onClose }: LightboxProps) {
 
       const viewportTop = window.scrollY
       const viewportHeight = window.innerHeight
-      const viewportCenter = viewportTop + viewportHeight / 2
+      //const viewportCenter = viewportTop + viewportHeight / 2
 
       lightboxRef.current.style.position = "absolute"
       lightboxRef.current.style.top = `${viewportTop}px`
