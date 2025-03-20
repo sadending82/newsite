@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import Image from "next/image"
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -22,32 +22,8 @@ type LightboxProps = {
 
 export default function Lightbox({ image, isOpen, onClose }: LightboxProps) {
   const [isLoading, setIsLoading] = useState(true)
-  const [loadingProgress, setLoadingProgress] = useState(0)
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
-
-  useEffect(() => {
-    if (isOpen){
-
-    setIsLoading(true)
-    setLoadingProgress(0)
-
-    const interval = setInterval(() => {
-      setLoadingProgress((prev) => {
-        if (!isLoading && prev >= 100) {
-          clearInterval(interval)
-          return 100
-        }
-        if (isLoading) {
-          const increment = Math.max(1, 10 * (1 - prev / 100))
-          return Math.min(99, prev + increment)
-        }
-        return Math.min(100 ,prev + 10)
-      })
-    }, 300)
-
-    return () => clearInterval(interval)
-  }
-  }, [isOpen, image, isLoading])
+  const lightboxRef = useRef<HTMLDivElement>(null)
 
   // useEffect(() => {
   //   if (isOpen) {
@@ -61,6 +37,35 @@ export default function Lightbox({ image, isOpen, onClose }: LightboxProps) {
   //     document.body.style.overflow = ""
   //   }
   // }, [isOpen])
+
+  useEffect(() => {
+    if (!isOpen) return
+
+    const updateLightboxPosition = () => {
+      if (!lightboxRef.current) return
+
+      const viewportTop = window.scrollY
+      const viewportHeight = window.innerHeight
+      const viewportCenter = viewportTop + viewportHeight / 2
+
+      lightboxRef.current.style.position = "absolute"
+      lightboxRef.current.style.top = `${viewportTop}px`
+      lightboxRef.current.style.height = `${viewportHeight}px`
+      lightboxRef.current.style.display = "flex"
+      lightboxRef.current.style.alignItems = "center"
+      lightboxRef.current.style.justifyContent = "center"
+    }
+
+    updateLightboxPosition()
+
+    window.addEventListener("scroll", updateLightboxPosition, {passive: true})
+    window.addEventListener("resize", updateLightboxPosition, {passive: true})
+
+    return () => {
+      window.removeEventListener("scroll", updateLightboxPosition)
+      window.removeEventListener("resize", updateLightboxPosition)
+    }
+  }, [isOpen])
 
   useEffect(() => {
     if (!image) return
@@ -107,31 +112,54 @@ export default function Lightbox({ image, isOpen, onClose }: LightboxProps) {
 
   return (
     <div
-     className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-90"
+    ref={lightboxRef}
+     style = {{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0,
+      width: "100%",
+      backgroundColor: "rgba(0, 0, 0, 0.9)",
+      zIndex: 9999,
+      pointerEvents: "auto",
+     }}
      onClick={onClose}
     >
-      <div className="relative max-w-[90vw] max-h-[90vh]" onClick={(e) => e.stopPropagation()}>
+      <div 
+        style={{
+          position: "relative",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          margin: "auto"
+        }}
+        onClick={(e) => e.stopPropagation()}
+      >
         <Button
-          variant="ghost"
+          variant="outline"
           size="icon"
           className="absolute top-2 right-2 text-white bg-black bg-opacity-50 hover:bg-opacity-75"
           onClick={onClose}
           aria-label="closeLightbox"
         >
-          <X className="h-6 w-6 text=white" />
+          <X style={{width: "12px", height: "12px", color: "white"}} />
         </Button>
         
-        <div className="relative">
-          {loadingProgress < 100 && (
-            <div className="apsolute inset=0 flex-col items-center justify-center
-             z-10 bg-black/50 rounded-md">
-              <div className="w-64 h-2 bg-gray-700 rounded-full overflow-hidden mb-2">
-                <div
-                  className="h-full bg-white transition-all duration-300 ease-out"
-                  style={{width:`${loadingProgress}`}}
-                />
-              </div>
-              <p className="text-white text-sm">{`${Math.round(loadingProgress)}%`}</p>
+        <div style={{ position: "relative"}}>
+          {isLoading  && (
+            <div 
+              style ={{
+                position: "absolute",
+                inset: 0,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                zIndex: 10,
+                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                borderRadius: "6px"
+              }}
+            >
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-white"></div>
              </div>
           )}
 
