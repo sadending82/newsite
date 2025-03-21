@@ -811,7 +811,7 @@ export default function Gallery() {
                    src={`/smallImages/ID${item.id}.png` || "/placeholder.svg"}
                    alt={item.title}
                    fill
-                   className="object-cover"
+                   objectFit="contain"
                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                    loading="lazy"
                    decoding="async"

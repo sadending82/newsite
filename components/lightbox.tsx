@@ -22,7 +22,7 @@ type LightboxProps = {
 
 export default function Lightbox({ image, isOpen, onClose }: LightboxProps) {
   const [isLoading, setIsLoading] = useState(true)
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
+  const [dimensions, setDimensions] = useState({ width: 1200, height: 800 })
   const lightboxRef = useRef<HTMLDivElement>(null)
 
   // useEffect(() => {
@@ -73,6 +73,7 @@ export default function Lightbox({ image, isOpen, onClose }: LightboxProps) {
     const img = new window.Image()
     img.src = image.imageUrl
     img.onload = () => {
+      setIsLoading(true)
       const aspectRatio = img.width / img.height
       let width = Math.min(img.width, window.innerWidth * 0.9)
       let height = width / aspectRatio
@@ -131,7 +132,7 @@ export default function Lightbox({ image, isOpen, onClose }: LightboxProps) {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          margin: "auto"
+          margin: "auto",
         }}
         onClick={(e) => e.stopPropagation()}
       >
@@ -146,7 +147,7 @@ export default function Lightbox({ image, isOpen, onClose }: LightboxProps) {
         </Button>
         
         <div style={{ position: "relative"}}>
-          {isLoading  && (
+          {isLoading && (
             <div 
               style ={{
                 position: "absolute",
@@ -159,23 +160,25 @@ export default function Lightbox({ image, isOpen, onClose }: LightboxProps) {
                 borderRadius: "6px"
               }}
             >
-              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-white"></div>
-             </div>
+              <div className="animate-spin rounded-full h-12 w-12 border-2 border-t-transparent border-white"/>
+            </div>
           )}
 
           <Image
-            src={image.imageUrl || "/placeholder.svg"}
+            src={image.imageUrl}
             alt={image.title}
             width={dimensions.width}
             height={dimensions.height}
             className="max-w-full max-h-[90vh] object-contain"
             priority
             onLoadingComplete={handleImageLoadingComplete}
+            placeholder="empty"
           />
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white py-2 px-4 rounded">
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50
+           text-white py-2 px-4 rounded">
             {image.title}
           </div>
-          </div>
+        </div>
       </div>
       <Button variant="secondary" className="absolute bottom-4 right-4" onClick={onClose}>
         閉じる
