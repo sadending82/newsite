@@ -59,6 +59,7 @@ const mainCategories: Category[] =[
       {id: "pomeran", name: "ぽめらん", color: "", logoUrl: ""},
       {id: "ragita", name: "らぎ太", color: "", logoUrl: ""},
       {id: "nanoha", name: "なのは", color: "", logoUrl: ""},
+      {id: "mekanyanko", name: "めかにゃんこ", color: "", logoUrl: ""},
     ]
   }
 ]
@@ -714,6 +715,114 @@ const galleryItems: GalleryItem[] = [
     subCategories: ["firi",],
     imageUrl: "/Images/ID81.png",
     date: "2025-01-15",
+  },
+
+  {
+    id: 82,
+    title: "るりお君",
+    mainCategory: "mesugakissa",
+    subCategories: ["rurio",],
+    imageUrl: "/Images/ID82.png",
+    date: "2025-03-26",
+  },
+
+  {
+    id: 83,
+    title: "るりお君",
+    mainCategory: "mesugakissa",
+    subCategories: ["rurio",],
+    imageUrl: "/Images/ID83.png",
+    date: "2025-03-26",
+  },
+
+  {
+    id: 84,
+    title: "るりお君",
+    mainCategory: "mesugakissa",
+    subCategories: ["rurio",],
+    imageUrl: "/Images/ID84.png",
+    date: "2025-03-26",
+  },
+
+  {
+    id: 85,
+    title: "宮坂稲荷",
+    mainCategory: "mesugakissa",
+    subCategories: ["miyasaka",],
+    imageUrl: "/Images/ID85.png",
+    date: "2025-03-26",
+  },
+
+  {
+    id: 86,
+    title: "あまちじょんこ",
+    mainCategory: "mesugakissa",
+    subCategories: ["jyonko",],
+    imageUrl: "/Images/ID86.png",
+    date: "2025-03-26",
+  },
+
+  {
+    id: 87,
+    title: "Celestia",
+    mainCategory: "mesugakissa",
+    subCategories: ["celestia",],
+    imageUrl: "/Images/ID87.png",
+    date: "2025-03-26",
+  },
+
+  {
+    id: 88,
+    title: "るりお君",
+    mainCategory: "mesugakissa",
+    subCategories: ["rurio",],
+    imageUrl: "/Images/ID88.png",
+    date: "2025-03-26",
+  },
+
+  {
+    id: 89,
+    title: "めかにゃんこ",
+    mainCategory: "mesugakissa",
+    subCategories: ["mekanyanko",],
+    imageUrl: "/Images/ID89.png",
+    date: "2025-03-26",
+  },
+
+  {
+    id: 90,
+    title: "がんもん",
+    mainCategory: "mesugakissa",
+    subCategories: ["ganmon",],
+    imageUrl: "/Images/ID90.png",
+    date: "2025-03-26",
+  },
+
+  {
+    id: 91,
+    title: "ひめ",
+    mainCategory: "mesugakissa",
+    subCategories: ["hime",],
+    imageUrl: "/Images/ID91.png",
+    date: "2025-03-26",
+  },
+
+  {
+    id: 92,
+    title: "がんもん",
+    mainCategory: "mesugakissa",
+    subCategories: ["ganmon",],
+    imageUrl: "/Images/ID92.png",
+    date: "2025-03-26",
+  },
+
+  {
+    id: 93,
+    title: "Celestia",
+    mainCategory: "mesugakissa",
+    subCategories: ["celestia",],
+    imageUrl: "/Images/ID93.png",
+    date: "2025-03-26",
   },
 ]
 
