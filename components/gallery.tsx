@@ -60,6 +60,8 @@ const mainCategories: Category[] =[
       {id: "ragita", name: "らぎ太", color: "", logoUrl: ""},
       {id: "nanoha", name: "なのは", color: "", logoUrl: ""},
       {id: "mekanyanko", name: "めかにゃんこ", color: "", logoUrl: ""},
+      {id: "shiduku", name: "しづく", color: "", logoUrl: ""},
+      {id: "matumotorina", name: "松本莉奈", color: "", logoUrl: ""},
     ]
   }
 ]
@@ -824,6 +826,115 @@ const galleryItems: GalleryItem[] = [
     imageUrl: "/Images/ID93.png",
     date: "2025-03-26",
   },
+
+  {
+    id: 94,
+    title: "ユークリウッド",
+    mainCategory: "mesugakissa",
+    subCategories: ["eucliwood",],
+    imageUrl: "/Images/ID94.png",
+    date: "2025-04-02",
+  },
+
+  {
+    id: 95,
+    title: "ユークリウッド",
+    mainCategory: "mesugakissa",
+    subCategories: ["eucliwood",],
+    imageUrl: "/Images/ID95.png",
+    date: "2025-04-02",
+  },
+
+  {
+    id: 96,
+    title: "しづく",
+    mainCategory: "mesugakissa",
+    subCategories: ["shiduku",],
+    imageUrl: "/Images/ID96.png",
+    date: "2025-04-02",
+  },
+
+  {
+    id: 97,
+    title: "天河サレナ",
+    mainCategory: "mesugakissa",
+    subCategories: ["sarena",],
+    imageUrl: "/Images/ID97.png",
+    date: "2025-04-02",
+  },
+
+  {
+    id: 98,
+    title: "ぽめらん",
+    mainCategory: "mesugakissa",
+    subCategories: ["pomeran",],
+    imageUrl: "/Images/ID98.png",
+    date: "2025-04-02",
+  },
+
+  {
+    id: 99,
+    title: "ひめ",
+    mainCategory: "mesugakissa",
+    subCategories: ["hime",],
+    imageUrl: "/Images/ID99.png",
+    date: "2025-04-02",
+  },
+
+  {
+    id: 100,
+    title: "宮坂稲荷",
+    mainCategory: "mesugakissa",
+    subCategories: ["miyasaka",],
+    imageUrl: "/Images/ID100.png",
+    date: "2025-04-02",
+  },
+
+  {
+    id: 101,
+    title: "ぽめらん",
+    mainCategory: "mesugakissa",
+    subCategories: ["pomeran",],
+    imageUrl: "/Images/ID101.png",
+    date: "2025-04-02",
+  },
+
+  {
+    id: 102,
+    title: "わぎり",
+    mainCategory: "mesugakissa",
+    subCategories: ["wagiri",],
+    imageUrl: "/Images/ID102.png",
+    date: "2025-04-02",
+  },
+
+  {
+    id: 103,
+    title: "ぽめらん",
+    mainCategory: "mesugakissa",
+    subCategories: ["pomeran",],
+    imageUrl: "/Images/ID103.png",
+    date: "2025-04-02",
+  },
+
+  {
+    id: 104,
+    title: "松本莉奈",
+    mainCategory: "mesugakissa",
+    subCategories: ["matumotorina",],
+    imageUrl: "/Images/ID104.png",
+    date: "2025-04-02",
+  },
+
+  {
+    id: 105,
+    title: "松本莉奈",
+    mainCategory: "mesugakissa",
+    subCategories: ["matumotorina",],
+    imageUrl: "/Images/ID105.png",
+    date: "2025-04-02",
+  },
+
 ]
 
 
