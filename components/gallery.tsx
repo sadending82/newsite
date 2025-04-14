@@ -935,6 +935,113 @@ const galleryItems: GalleryItem[] = [
     date: "2025-04-02",
   },
 
+  {
+    id: 106,
+    title: "薙。",
+    mainCategory: "mesugakissa",
+    subCategories: ["nagi",],
+    imageUrl: "/Images/ID106.png",
+    date: "2025-04-09",
+  },
+
+  {
+    id: 107,
+    title: "clow_",
+    mainCategory: "mesugakissa",
+    subCategories: ["clow",],
+    imageUrl: "/Images/ID107.png",
+    date: "2025-04-09",
+  },
+
+  {
+    id: 108,
+    title: "がんもん",
+    mainCategory: "mesugakissa",
+    subCategories: ["ganmon",],
+    imageUrl: "/Images/ID108.png",
+    date: "2025-04-09",
+  },
+
+  {
+    id: 109,
+    title: "しづく",
+    mainCategory: "mesugakissa",
+    subCategories: ["shiduku",],
+    imageUrl: "/Images/ID109.png",
+    date: "2025-04-09",
+  },
+
+  {
+    id: 110,
+    title: "あまちじょんこ",
+    mainCategory: "mesugakissa",
+    subCategories: ["jyonko",],
+    imageUrl: "/Images/ID110.png",
+    date: "2025-04-09",
+  },
+
+  {
+    id: 111,
+    title: "ふぃり",
+    mainCategory: "mesugakissa",
+    subCategories: ["firi",],
+    imageUrl: "/Images/ID111.png",
+    date: "2025-04-09",
+  },
+
+  {
+    id: 112,
+    title: "薙。",
+    mainCategory: "mesugakissa",
+    subCategories: ["nagi",],
+    imageUrl: "/Images/ID112.png",
+    date: "2025-04-09",
+  },
+
+  {
+    id: 113,
+    title: "なのは",
+    mainCategory: "mesugakissa",
+    subCategories: ["nanoha",],
+    imageUrl: "/Images/ID113.png",
+    date: "2025-04-09",
+  },
+
+  {
+    id: 114,
+    title: "あまちじょんこ",
+    mainCategory: "mesugakissa",
+    subCategories: ["jyonko",],
+    imageUrl: "/Images/ID114.png",
+    date: "2025-04-09",
+  },
+
+  {
+    id: 115,
+    title: "あまちじょんこ",
+    mainCategory: "mesugakissa",
+    subCategories: ["jyonko",],
+    imageUrl: "/Images/ID115.png",
+    date: "2025-04-09",
+  },
+
+  {
+    id: 116,
+    title: "キルト",
+    mainCategory: "mesugakissa",
+    subCategories: ["kiruto",],
+    imageUrl: "/Images/ID116.png",
+    date: "2025-04-09",
+  },
+
+  {
+    id: 117,
+    title: "ひめ",
+    mainCategory: "mesugakissa",
+    subCategories: ["hime",],
+    imageUrl: "/Images/ID117.png",
+    date: "2025-04-09",
+  },
 ]
 
 
