@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from "react"
 import Image from "next/image"
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { japaneseFont } from "@/components/fonts"
 
 type GalleryItem = {
   id: number
@@ -174,13 +175,13 @@ export default function Lightbox({ image, isOpen, onClose }: LightboxProps) {
             onLoadingComplete={handleImageLoadingComplete}
             placeholder="empty"
           />
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50
-           text-white py-2 px-4 rounded">
+          <div className={`absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50
+           text-white py-2 px-4 rounded ${japaneseFont.className}`}>
             {image.title}
           </div>
         </div>
       </div>
-      <Button variant="secondary" className="absolute bottom-4 right-4" onClick={onClose}>
+      <Button variant="secondary" className={`absolute bottom-4 right-4 ${japaneseFont.className}`} onClick={onClose}>
         閉じる
       </Button>
     </div>

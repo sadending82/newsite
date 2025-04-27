@@ -23,6 +23,9 @@ export default function Navbar() {
           <Button variant={pathname === "/contact" ? "default" : "ghost"} asChild>
             <Link href="/contact">Contact</Link>
           </Button>
+          <Button variant={pathname === "/update" ? "default" : "ghost"} asChild>
+            <Link href="/update">Update</Link>
+          </Button>
         </nav>
       </div>
     </header>

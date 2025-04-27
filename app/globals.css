@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -119,6 +118,32 @@
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
 }
+
+@font-face {
+  font-family: 'JapaneseFont';
+  src: url('/fonts/HonyaJi-Re.woff2') format('woff2');
+  font-display: swap;
+  unicode-range: U+3040-309F, U+30A0-30FF, U+4E00-9FAF;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  font-feature-settings: "palt" 1;
+}
+
+/*
+html[lang="ja"] {
+  font-family: 'JapaneseFont', 'Inter', sans-serif;
+}
+
+html[lang="ja"] *:lang(ja) {
+  font-family: 'JapaneseFont', sans-serif;
+}
+*/
+
 
 @layer base {
   * {

@@ -9,6 +9,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { useBackground } from "./BackgroundContext"
 import Lightbox from "@/components/lightbox"
 import {ChevronLeft, ChevronRight} from "lucide-react"
+import { japaneseFont } from "@/components/fonts"
 
 type Category = {
   id: string
@@ -62,6 +63,12 @@ const mainCategories: Category[] =[
       {id: "mekanyanko", name: "めかにゃんこ", color: "", logoUrl: ""},
       {id: "shiduku", name: "しづく", color: "", logoUrl: ""},
       {id: "matumotorina", name: "松本莉奈", color: "", logoUrl: ""},
+      {id: "cocoa", name: "ここあ", color: "", logoUrl: ""},
+      {id: "totoro", name: "華杜トトロ", color: "", logoUrl: ""},  
+      {id: "shakenokiwami", name: "shake_no_kiwami", color: "", logoUrl: ""}, 
+      {id: "hiyokopiyopiyo", name: "ひよこぴよぴよ", color: "", logoUrl: ""}, 
+      {id: "purimo", name: "ぷりも", color: "", logoUrl: ""},
+      {id: "amepan", name: "あめぱん", color: "", logoUrl: ""},
     ]
   }
 ]
@@ -1042,6 +1049,241 @@ const galleryItems: GalleryItem[] = [
     imageUrl: "/Images/ID117.png",
     date: "2025-04-09",
   },
+
+  {
+    id: 118,
+    title: "ここあ",
+    mainCategory: "mesugakissa",
+    subCategories: ["cocoa",],
+    imageUrl: "/Images/ID118.png",
+    date: "2025-04-16",
+  },
+
+  {
+    id: 119,
+    title: "Celestia",
+    mainCategory: "mesugakissa",
+    subCategories: ["celestia",],
+    imageUrl: "/Images/ID119.png",
+    date: "2025-04-16",
+  },
+
+  {
+    id: 120,
+    title: "ここあ",
+    mainCategory: "mesugakissa",
+    subCategories: ["cocoa",],
+    imageUrl: "/Images/ID120.png",
+    date: "2025-04-16",
+  },
+
+  {
+    id: 121,
+    title: "がんもん",
+    mainCategory: "mesugakissa",
+    subCategories: ["ganmon",],
+    imageUrl: "/Images/ID121.png",
+    date: "2025-04-16",
+  },
+
+  {
+    id: 122,
+    title: "華杜トトロ",
+    mainCategory: "mesugakissa",
+    subCategories: ["totoro",],
+    imageUrl: "/Images/ID122.png",
+    date: "2025-04-16",
+  },
+
+  {
+    id: 123,
+    title: "ユークリウッド",
+    mainCategory: "mesugakissa",
+    subCategories: ["eucliwood",],
+    imageUrl: "/Images/ID123.png",
+    date: "2025-04-16",
+  },
+
+  {
+    id: 124,
+    title: "まむる",
+    mainCategory: "mesugakissa",
+    subCategories: ["mamuru",],
+    imageUrl: "/Images/ID124.png",
+    date: "2025-04-16",
+  },
+
+  {
+    id: 125,
+    title: "ひめ",
+    mainCategory: "mesugakissa",
+    subCategories: ["hime",],
+    imageUrl: "/Images/ID125.png",
+    date: "2025-04-16",
+  },
+
+  {
+    id: 126,
+    title: "ユークリウッド",
+    mainCategory: "mesugakissa",
+    subCategories: ["eucliwood",],
+    imageUrl: "/Images/ID126.png",
+    date: "2025-04-16",
+  },
+
+  {
+    id: 127,
+    title: "ひめ",
+    mainCategory: "mesugakissa",
+    subCategories: ["hime",],
+    imageUrl: "/Images/ID127.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 128,
+    title: "ぽめらん",
+    mainCategory: "mesugakissa",
+    subCategories: ["pomeran",],
+    imageUrl: "/Images/ID128.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 129,
+    title: "shake_no_kiwami",
+    mainCategory: "mesugakissa",
+    subCategories: ["shakenokiwami",],
+    imageUrl: "/Images/ID129.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 130,
+    title: "むぅ",
+    mainCategory: "mesugakissa",
+    subCategories: ["muu",],
+    imageUrl: "/Images/ID130.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 131,
+    title: "ひよこぴよぴよ",
+    mainCategory: "mesugakissa",
+    subCategories: ["hiyokopiyopiyo",],
+    imageUrl: "/Images/ID131.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 132,
+    title: "ぷりも",
+    mainCategory: "mesugakissa",
+    subCategories: ["purimo",],
+    imageUrl: "/Images/ID132.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 133,
+    title: "ぷりも",
+    mainCategory: "mesugakissa",
+    subCategories: ["purimo",],
+    imageUrl: "/Images/ID133.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 134,
+    title: "むぅ",
+    mainCategory: "mesugakissa",
+    subCategories: ["muu",],
+    imageUrl: "/Images/ID134.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 135,
+    title: "ぽめらん",
+    mainCategory: "mesugakissa",
+    subCategories: ["pomeran",],
+    imageUrl: "/Images/ID135.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 136,
+    title: "shake_no_kiwami",
+    mainCategory: "mesugakissa",
+    subCategories: ["shakenokiwami",],
+    imageUrl: "/Images/ID136.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 137,
+    title: "あめぱん",
+    mainCategory: "mesugakissa",
+    subCategories: ["amepan",],
+    imageUrl: "/Images/ID137.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 138,
+    title: "めかにゃんこ",
+    mainCategory: "mesugakissa",
+    subCategories: ["mekanyanko",],
+    imageUrl: "/Images/ID138.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 139,
+    title: "しづく",
+    mainCategory: "mesugakissa",
+    subCategories: ["shiduku",],
+    imageUrl: "/Images/ID139.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 140,
+    title: "しづく",
+    mainCategory: "mesugakissa",
+    subCategories: ["shiduku",],
+    imageUrl: "/Images/ID140.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 141,
+    title: "ひよこぴよぴよ",
+    mainCategory: "mesugakissa",
+    subCategories: ["hiyokopiyopiyo",],
+    imageUrl: "/Images/ID141.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 142,
+    title: "がんもん",
+    mainCategory: "mesugakissa",
+    subCategories: ["ganmon",],
+    imageUrl: "/Images/ID142.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 143,
+    title: "ぷりも",
+    mainCategory: "mesugakissa",
+    subCategories: ["purimo",],
+    imageUrl: "/Images/ID143.png",
+    date: "2025-04-23",
+  },
+
 ]
 
 
@@ -1170,7 +1412,7 @@ export default function Gallery() {
   return (
     <div className="space-y-8 transition=colors duration-300">
       {/* main category */}
-      <div className="flex flex-wrap gap-2 justify-center mb-4">
+      <div className={`flex flex-wrap gap-2 justify-center mb-4 ${japaneseFont.className}`}>
           <Button
             variant={!activeMainCategory ? "default" : "outline"}
             onClick={() => {
@@ -1241,7 +1483,7 @@ export default function Gallery() {
                     variant={activeSubCategory === subCategory.id ? "default" : "outline"}
                     onClick={() => handleSubCategoryClick(subCategory.id)}
                     className={cn(
-                      "px-3 py-1 text-sm",
+                      "px-3 py-1 text-sm", japaneseFont.className
                     )}
                   >
                     {subCategory.name}
@@ -1255,7 +1497,7 @@ export default function Gallery() {
 
       {/* gallery grid */}
       <AnimatePresence>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ${japaneseFont.className}`}>
           {paginatedItems.map((item, index) => (
             <motion.div
               key={item.id}
@@ -1272,10 +1514,10 @@ export default function Gallery() {
                    src={`/smallImages/ID${item.id}.png` || "/placeholder.svg"}
                    alt={item.title}
                    fill
-                   objectFit="contain"
                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                    loading="lazy"
                    decoding="async"
+                   style={{objectFit:"contain"}}
                    />
                 </div>
                 <CardContent className="p-4">
@@ -1342,9 +1584,9 @@ export default function Gallery() {
         </div>
       )}
 
-      <div className="text-center text-sm text-muted-foreground">
-        {filteredAndSortedItems.length}個の写真の中、{(currentPage - 1) * itemsPerPage + 1}から
-        {Math.min(currentPage * itemsPerPage, filteredAndSortedItems.length)}の写真を表示中
+      <div className={`text-center text-sm text-muted-foreground ${japaneseFont.className}`}>
+        {filteredAndSortedItems.length} 個の写真の中、{(currentPage - 1) * itemsPerPage + 1} から {Math.min(currentPage * itemsPerPage, filteredAndSortedItems.length)} の写真を表示中
+
       </div>
 
       {
