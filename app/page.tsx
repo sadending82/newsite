@@ -17,7 +17,7 @@ export default function Home() {
           <div className={`mt-8 flex justify-center gap-4 ${japaneseFont.className}`}>
             <Button asChild size="lg">
               <Link href="/gallery">
-                ギャラリーに <ArrowRight className="ml-2 h-4 w-4" />
+                ギャラリーへ <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button variant="outline" asChild size="lg">

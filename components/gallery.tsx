@@ -65,10 +65,13 @@ const mainCategories: Category[] =[
       {id: "matumotorina", name: "松本莉奈", color: "", logoUrl: ""},
       {id: "cocoa", name: "ここあ", color: "", logoUrl: ""},
       {id: "totoro", name: "華杜トトロ", color: "", logoUrl: ""},  
-      {id: "shakenokiwami", name: "shake_no_kiwami", color: "", logoUrl: ""}, 
+      {id: "shake", name: "しゃけ", color: "", logoUrl: ""}, 
       {id: "hiyokopiyopiyo", name: "ひよこぴよぴよ", color: "", logoUrl: ""}, 
       {id: "purimo", name: "ぷりも", color: "", logoUrl: ""},
       {id: "amepan", name: "あめぱん", color: "", logoUrl: ""},
+      {id: "amahatu", name: "あまはつ", color: "", logoUrl: ""},
+      {id: "fam", name: "ファム", color: "", logoUrl: ""},
+      {id: "menoa", name: "メノア", color: "", logoUrl: ""},
     ]
   }
 ]
@@ -1151,9 +1154,9 @@ const galleryItems: GalleryItem[] = [
 
   {
     id: 129,
-    title: "shake_no_kiwami",
+    title: "しゃけ",
     mainCategory: "mesugakissa",
-    subCategories: ["shakenokiwami",],
+    subCategories: ["shake",],
     imageUrl: "/Images/ID129.png",
     date: "2025-04-23",
   },
@@ -1214,9 +1217,9 @@ const galleryItems: GalleryItem[] = [
 
   {
     id: 136,
-    title: "shake_no_kiwami",
+    title: "しゃけ",
     mainCategory: "mesugakissa",
-    subCategories: ["shakenokiwami",],
+    subCategories: ["shake",],
     imageUrl: "/Images/ID136.png",
     date: "2025-04-23",
   },
@@ -1282,6 +1285,87 @@ const galleryItems: GalleryItem[] = [
     subCategories: ["purimo",],
     imageUrl: "/Images/ID143.png",
     date: "2025-04-23",
+  },
+
+  {
+    id: 144,
+    title: "clow_",
+    mainCategory: "mesugakissa",
+    subCategories: ["clow",],
+    imageUrl: "/Images/ID144.png",
+    date: "2025-04-30",
+  },
+
+  {
+    id: 145,
+    title: "clow_",
+    mainCategory: "mesugakissa",
+    subCategories: ["clow",],
+    imageUrl: "/Images/ID145.png",
+    date: "2025-04-30",
+  },
+
+  {
+    id: 146,
+    title: "あまはつ",
+    mainCategory: "mesugakissa",
+    subCategories: ["amahatu",],
+    imageUrl: "/Images/ID146.png",
+    date: "2025-04-30",
+  },
+
+  {
+    id: 147,
+    title: "ふぃり",
+    mainCategory: "mesugakissa",
+    subCategories: ["firi",],
+    imageUrl: "/Images/ID147.png",
+    date: "2025-04-30",
+  },
+
+  {
+    id: 148,
+    title: "ファム",
+    mainCategory: "mesugakissa",
+    subCategories: ["fam",],
+    imageUrl: "/Images/ID148.png",
+    date: "2025-04-30",
+  },
+
+  {
+    id: 149,
+    title: "メノア",
+    mainCategory: "mesugakissa",
+    subCategories: ["menoa",],
+    imageUrl: "/Images/ID149.png",
+    date: "2025-04-30",
+  },
+
+  {
+    id: 150,
+    title: "あまはつ",
+    mainCategory: "mesugakissa",
+    subCategories: ["amahatu",],
+    imageUrl: "/Images/ID150.png",
+    date: "2025-04-30",
+  },
+
+  {
+    id: 151,
+    title: "あめぱん",
+    mainCategory: "mesugakissa",
+    subCategories: ["amepan",],
+    imageUrl: "/Images/ID137.png",
+    date: "2025-04-23",
+  },
+
+  {
+    id: 152,
+    title: "ふぃり",
+    mainCategory: "mesugakissa",
+    subCategories: ["firi",],
+    imageUrl: "/Images/ID152.png",
+    date: "2025-04-30",
   },
 
 ]
