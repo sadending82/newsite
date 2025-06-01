@@ -27,7 +27,7 @@ export default function ContactPage() {
                   Sady_trd
                 </p>
                 <div className="bg-gray-200 rounded-md max-w-3xl mx-auto py-10">
-                  <p className={`text-2xl ${japaneseFont.className}`}>
+                  <p className={`text-xl ${japaneseFont.className}`}>
                     用件がありましたら、気楽にご連絡ください！
                   </p>
                 </div>

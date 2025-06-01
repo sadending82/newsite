@@ -8,7 +8,7 @@ export default function Navbar() {
   const pathname = usePathname()
 
   return (
-    <header className="border-b">
+    <header className="bg-white/50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-xl font-bold">
           Sady&apos;s Memory Box
