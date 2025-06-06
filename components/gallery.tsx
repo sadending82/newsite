@@ -3,15 +3,15 @@
 import { useEffect, useState} from "react"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
-import { cn } from "@/lib/utils"
+//import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { useBackground } from "./BackgroundContext"
+//import { useBackground } from "./BackgroundContext"
 import CategorySidebar from "./categorySidebar"
 import Lightbox from "@/components/lightbox"
-import { ChevronLeft, ChevronRight, ChevronDown, Calendar, Grid, List } from "lucide-react"
+import { ChevronLeft, ChevronRight, ChevronDown, Calendar, /*Grid, List*/ } from "lucide-react"
 import { japaneseFont } from "@/components/fonts"
-import { mainCategories, getSubCategoryNames } from "@/data/categories"
+import { mainCategories, /*getSubCategoryNames*/ } from "@/data/categories"
 import { 
   galleryItems,
   sortGalleryItems,
@@ -30,9 +30,9 @@ export default function Gallery() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [currentPage, setCurrentPage] = useState(1)
   const [selectedMonth, setSelectedMonth] = useState<{ year: number; month: number } | null>(null)
-  const [groupByMonth, setGroupByMonth] = useState(false)
+  const [groupByMonth, /*setGroupByMonth*/] = useState(false)
   const itemsPerPage = 12
-  const { setBackground } = useBackground();
+  //const { setBackground } = useBackground();
 
   const availableMonths = getAvailableMonths()
 
@@ -95,25 +95,26 @@ export default function Gallery() {
   const handleMainCategoryClick = (categoryId: string | null) => {
       setActiveMainCategory(categoryId)
       setActiveSubCategory(null)
-      setBackground("/Images/ID1.png?height=1080&width=1920")
+      //setBackground("https://drive.google.com/uc?id=1HIPlPcUnWBo2WfpEMcIMT3JM3ey5L3PB")
   }
 
   const handleSubCategoryClick = (categoryId: string | null) => {
     setActiveSubCategory(categoryId)
+    /*
     switch(categoryId)
     {
       case "mesugakissa":
-        setBackground("/Images/mesugakissa_bg.png?height=1080&width=1920")
+        setBackground("https://drive.google.com/uc?id=1L70HkvesPzQTvybVYyUpMNkV7SRbUNl7")
         break
       default:
-        setBackground("/Images/ID1.png?height=1080&width=1920")
+        setBackground("https://drive.google.com/uc?id=1HIPlPcUnWBo2WfpEMcIMT3JM3ey5L3PB")
         break
-    }
+    }*/
   }
 
   const handleImageClick = (index: number) => {
-    setCurrentImageIndex(index)
-    SetLightboxOpen(true)
+      setCurrentImageIndex(index)
+      SetLightboxOpen(true)
   }
 
   const handleCloseLightbox = () => {
@@ -132,19 +133,19 @@ export default function Gallery() {
       setSelectedMonth({year, month})
     }
   }
-
+  /*
   const toggleGroupByMonth = () => {
     setGroupByMonth(!groupByMonth)
   }
-
-  const currentSubCategories = activeMainCategory
+  */
+  /*const currentSubCategories = activeMainCategory
    ? mainCategories.find((cat) => cat.id === activeMainCategory)?.children || []
    : []
 
   const currentCategoryLogo = activeMainCategory
    ? mainCategories.find((cat) => cat.id ===activeMainCategory)?.logoUrl 
    : null
-
+  */
   return (
     <>
       <CategorySidebar
@@ -283,15 +284,14 @@ export default function Gallery() {
             </div>
           )}
 
-          <div className={`text-center text-sm text-muted-foreground ${japaneseFont.className}`}>
+          <div className={`text-center text-sm text-muted-foreground py-8 ${japaneseFont.className}`}>
             {filteredAndSortedItems.length} 個の写真の中、{(currentPage - 1) * itemsPerPage + 1} から {Math.min(currentPage * itemsPerPage, filteredAndSortedItems.length)} の写真を表示中
 
           </div>
 
           {
           lightboxOpen && paginatedItems.length > 0 && (
-            <Lightbox image={paginatedItems[currentImageIndex]} isOpen={lightboxOpen}
-            onClose={handleCloseLightbox}/>
+            <Lightbox image={paginatedItems[currentImageIndex]} isOpen={lightboxOpen} onClose={handleCloseLightbox}/>
           )}
         </main>
       </div>

@@ -1,10 +1,10 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
-import Image from "next/image"
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { japaneseFont } from "@/components/fonts"
+import ApiImage from "./apiImage"
 
 type GalleryItem = {
   id: number
@@ -165,8 +165,8 @@ export default function Lightbox({ image, isOpen, onClose }: LightboxProps) {
             </div>
           )}
 
-          <Image
-            src={image.imageUrl}
+          <ApiImage
+            imageName={image.imageUrl}
             alt={image.title}
             width={dimensions.width}
             height={dimensions.height}

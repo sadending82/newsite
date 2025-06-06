@@ -6,7 +6,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ",
         mainCategory: "mesugakissa",
         subCategories: ["hime",],
-        imageUrl: "/Images/ID1.png",
+        imageUrl: "images/ID1.png",
         date: "2025-02-19",
     },
     {
@@ -14,7 +14,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ",
         mainCategory: "mesugakissa",
         subCategories: ["hime",],
-        imageUrl: "/Images/ID2.png",
+        imageUrl: "images/ID2.png",
         date: "2025-02-19",
     },
     {
@@ -22,7 +22,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ",
         mainCategory: "mesugakissa",
         subCategories: ["hime",],
-        imageUrl: "/Images/ID3.png",
+        imageUrl: "images/ID3.png",
         date: "2025-02-19",
     },
     {
@@ -30,7 +30,7 @@ export const galleryItems: GalleryItem[] = [
         title: "天河サレナ",
         mainCategory: "mesugakissa",
         subCategories: ["sarena",],
-        imageUrl: "/Images/ID4.png",
+        imageUrl: "images/ID4.png",
         date: "2025-03-05",
     },
     {
@@ -38,7 +38,7 @@ export const galleryItems: GalleryItem[] = [
         title: "天河サレナ",
         mainCategory: "mesugakissa",
         subCategories: ["sarena",],
-        imageUrl: "/Images/ID5.png",
+        imageUrl: "images/ID5.png",
         date: "2025-03-05",
     },
     {
@@ -46,7 +46,7 @@ export const galleryItems: GalleryItem[] = [
         title: "天河サレナ",
         mainCategory: "mesugakissa",
         subCategories: ["sarena",],
-        imageUrl: "/Images/ID6.png",
+        imageUrl: "images/ID6.png",
         date: "2024-12-04",
     },
     {
@@ -54,7 +54,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ",
         mainCategory: "mesugakissa",
         subCategories: ["hime",],
-        imageUrl: "/Images/ID7.png",
+        imageUrl: "images/ID7.png",
         date: "2024-12-04",
     },
     {
@@ -62,7 +62,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ",
         mainCategory: "mesugakissa",
         subCategories: ["hime",],
-        imageUrl: "/Images/ID8.png",
+        imageUrl: "images/ID8.png",
         date: "2024-07-10",
     },
     {
@@ -70,7 +70,7 @@ export const galleryItems: GalleryItem[] = [
         title: "天河サレナ",
         mainCategory: "mesugakissa",
         subCategories: ["sarena",],
-        imageUrl: "/Images/ID9.png",
+        imageUrl: "images/ID9.png",
         date: "2024-10-30",
     },
     {
@@ -78,7 +78,7 @@ export const galleryItems: GalleryItem[] = [
         title: "天河サレナ",
         mainCategory: "mesugakissa",
         subCategories: ["sarena",],
-        imageUrl: "/Images/ID10.png",
+        imageUrl: "images/ID10.png",
         date: "2024-11-13",
     },
     {
@@ -86,7 +86,7 @@ export const galleryItems: GalleryItem[] = [
         title: "天河サレナ",
         mainCategory: "mesugakissa",
         subCategories: ["sarena",],
-        imageUrl: "/Images/ID11.png",
+        imageUrl: "images/ID11.png",
         date: "2024-11-13",
     },
     {
@@ -94,7 +94,7 @@ export const galleryItems: GalleryItem[] = [
         title: "めいめいはせっと",
         mainCategory: "mesugakissa",
         subCategories: ["meimeime",],
-        imageUrl: "/Images/ID12.png",
+        imageUrl: "images/ID12.png",
         date: "2025-03-05",
     },
     {
@@ -102,7 +102,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ゆすりん",
         mainCategory: "mesugakissa",
         subCategories: ["yusurin",],
-        imageUrl: "/Images/ID13.png",
+        imageUrl: "images/ID13.png",
         date: "2025-03-05",
     },
     {
@@ -110,7 +110,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ゆすりん",
         mainCategory: "mesugakissa",
         subCategories: ["yusurin",],
-        imageUrl: "/Images/ID14.png",
+        imageUrl: "images/ID14.png",
         date: "2025-03-05",
     },
     {
@@ -118,7 +118,7 @@ export const galleryItems: GalleryItem[] = [
         title: "薙。",
         mainCategory: "mesugakissa",
         subCategories: ["nagi",],
-        imageUrl: "/Images/ID15.png",
+        imageUrl: "images/ID15.png",
         date: "2025-03-05",
     },
     {
@@ -126,7 +126,7 @@ export const galleryItems: GalleryItem[] = [
         title: "Firanty",
         mainCategory: "mesugakissa",
         subCategories: ["firanty",],
-        imageUrl: "/Images/ID16.png",
+        imageUrl: "images/ID16.png",
         date: "2025-03-05",
     },
     {
@@ -134,7 +134,7 @@ export const galleryItems: GalleryItem[] = [
         title: "Firanty",
         mainCategory: "mesugakissa",
         subCategories: ["firanty",],
-        imageUrl: "/Images/ID17.png",
+        imageUrl: "images/ID17.png",
         date: "2025-03-05",
     },
     {
@@ -142,7 +142,7 @@ export const galleryItems: GalleryItem[] = [
         title: "わぎり",
         mainCategory: "mesugakissa",
         subCategories: ["wagiri",],
-        imageUrl: "/Images/ID18.png",
+        imageUrl: "images/ID18.png",
         date: "2025-03-05",
     },
     {
@@ -150,7 +150,7 @@ export const galleryItems: GalleryItem[] = [
         title: "わぎり",
         mainCategory: "mesugakissa",
         subCategories: ["wagiri",],
-        imageUrl: "/Images/ID19.png",
+        imageUrl: "images/ID19.png",
         date: "2025-03-05",
     },
     {
@@ -158,7 +158,7 @@ export const galleryItems: GalleryItem[] = [
         title: "むぅ",
         mainCategory: "mesugakissa",
         subCategories: ["muu",],
-        imageUrl: "/Images/ID20.png",
+        imageUrl: "images/ID20.png",
         date: "2025-03-05",
     },
     {
@@ -166,7 +166,7 @@ export const galleryItems: GalleryItem[] = [
         title: "宮坂稲荷",
         mainCategory: "mesugakissa",
         subCategories: ["miyasaka",],
-        imageUrl: "/Images/ID21.png",
+        imageUrl: "images/ID21.png",
         date: "2025-03-05",
     },
     {
@@ -174,7 +174,7 @@ export const galleryItems: GalleryItem[] = [
         title: "天河サレナ",
         mainCategory: "mesugakissa",
         subCategories: ["sarena",],
-        imageUrl: "/Images/ID22.png",
+        imageUrl: "images/ID22.png",
         date: "2025-03-12",
     },
     {
@@ -182,7 +182,7 @@ export const galleryItems: GalleryItem[] = [
         title: "やよちゃん",
         mainCategory: "mesugakissa",
         subCategories: ["yayo",],
-        imageUrl: "/Images/ID23.png",
+        imageUrl: "images/ID23.png",
         date: "2025-03-12",
     },
     {
@@ -190,7 +190,7 @@ export const galleryItems: GalleryItem[] = [
         title: "るりお君",
         mainCategory: "mesugakissa",
         subCategories: ["rurio",],
-        imageUrl: "/Images/ID24.png",
+        imageUrl: "images/ID24.png",
         date: "2025-03-12",
     },
     {
@@ -198,7 +198,7 @@ export const galleryItems: GalleryItem[] = [
         title: "るりお君",
         mainCategory: "mesugakissa",
         subCategories: ["rurio",],
-        imageUrl: "/Images/ID25.png",
+        imageUrl: "images/ID25.png",
         date: "2025-03-12",
     },
     {
@@ -206,7 +206,7 @@ export const galleryItems: GalleryItem[] = [
         title: "とここ",
         mainCategory: "mesugakissa",
         subCategories: ["tococo",],
-        imageUrl: "/Images/ID26.png",
+        imageUrl: "images/ID26.png",
         date: "2025-03-12",
     },
     {
@@ -214,7 +214,7 @@ export const galleryItems: GalleryItem[] = [
         title: "むぅ",
         mainCategory: "mesugakissa",
         subCategories: ["muu",],
-        imageUrl: "/Images/ID27.png",
+        imageUrl: "images/ID27.png",
         date: "2025-03-12",
     },
     {
@@ -222,7 +222,7 @@ export const galleryItems: GalleryItem[] = [
         title: "天河サレナ",
         mainCategory: "mesugakissa",
         subCategories: ["sarena",],
-        imageUrl: "/Images/ID28.png",
+        imageUrl: "images/ID28.png",
         date: "2025-03-12",
     },
     {
@@ -230,7 +230,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ",
         mainCategory: "mesugakissa",
         subCategories: ["hime",],
-        imageUrl: "/Images/ID29.png",
+        imageUrl: "images/ID29.png",
         date: "2025-03-12",
     },
     {
@@ -238,7 +238,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ",
         mainCategory: "mesugakissa",
         subCategories: ["hime",],
-        imageUrl: "/Images/ID30.png",
+        imageUrl: "images/ID30.png",
         date: "2025-03-12",
     },
     {
@@ -246,7 +246,7 @@ export const galleryItems: GalleryItem[] = [
         title: "キルト",
         mainCategory: "mesugakissa",
         subCategories: ["kiruto",],
-        imageUrl: "/Images/ID31.png",
+        imageUrl: "images/ID31.png",
         date: "2025-02-12",
     },
     {
@@ -254,7 +254,7 @@ export const galleryItems: GalleryItem[] = [
         title: "あまちじょんこ",
         mainCategory: "mesugakissa",
         subCategories: ["jyonko",],
-        imageUrl: "/Images/ID32.png",
+        imageUrl: "images/ID32.png",
         date: "2025-02-12",
     },
     {
@@ -262,7 +262,7 @@ export const galleryItems: GalleryItem[] = [
         title: "がんもん",
         mainCategory: "mesugakissa",
         subCategories: ["ganmon",],
-        imageUrl: "/Images/ID33.png",
+        imageUrl: "images/ID33.png",
         date: "2025-02-12",
     },
     {
@@ -270,7 +270,7 @@ export const galleryItems: GalleryItem[] = [
         title: "すとあい",
         mainCategory: "mesugakissa",
         subCategories: ["sutoai",],
-        imageUrl: "/Images/ID34.png",
+        imageUrl: "images/ID34.png",
         date: "2025-02-19",
     },
     {
@@ -278,7 +278,7 @@ export const galleryItems: GalleryItem[] = [
         title: "薙。",
         mainCategory: "mesugakissa",
         subCategories: ["nagi",],
-        imageUrl: "/Images/ID35.png",
+        imageUrl: "images/ID35.png",
         date: "2025-03-19",
     },
     {
@@ -286,7 +286,7 @@ export const galleryItems: GalleryItem[] = [
         title: "薙。",
         mainCategory: "mesugakissa",
         subCategories: ["nagi",],
-        imageUrl: "/Images/ID36.png",
+        imageUrl: "images/ID36.png",
         date: "2025-03-19",
     },
     {
@@ -294,7 +294,7 @@ export const galleryItems: GalleryItem[] = [
         title: "まむる",
         mainCategory: "mesugakissa",
         subCategories: ["mamuru",],
-        imageUrl: "/Images/ID37.png",
+        imageUrl: "images/ID37.png",
         date: "2025-03-19",
     },
     {
@@ -302,7 +302,7 @@ export const galleryItems: GalleryItem[] = [
         title: "まむる",
         mainCategory: "mesugakissa",
         subCategories: ["mamuru",],
-        imageUrl: "/Images/ID38.png",
+        imageUrl: "images/ID38.png",
         date: "2025-03-19",
     },
     {
@@ -310,7 +310,7 @@ export const galleryItems: GalleryItem[] = [
         title: "とここ",
         mainCategory: "mesugakissa",
         subCategories: ["tococo",],
-        imageUrl: "/Images/ID39.png",
+        imageUrl: "images/ID39.png",
         date: "2025-03-19",
     },
     {
@@ -318,7 +318,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ",
         mainCategory: "mesugakissa",
         subCategories: ["hime",],
-        imageUrl: "/Images/ID40.png",
+        imageUrl: "images/ID40.png",
         date: "2025-03-19",
     },
     {
@@ -326,7 +326,7 @@ export const galleryItems: GalleryItem[] = [
         title: "Celestia、Firanty",
         mainCategory: "mesugakissa",
         subCategories: ["celestia", "firanty",],
-        imageUrl: "/Images/ID41.png",
+        imageUrl: "images/ID41.png",
         date: "2025-03-19",
     },
     {
@@ -334,7 +334,7 @@ export const galleryItems: GalleryItem[] = [
         title: "とここ",
         mainCategory: "mesugakissa",
         subCategories: ["tococo",],
-        imageUrl: "/Images/ID42.png",
+        imageUrl: "images/ID42.png",
         date: "2025-03-19",
     },
     {
@@ -342,7 +342,7 @@ export const galleryItems: GalleryItem[] = [
         title: "とここ",
         mainCategory: "mesugakissa",
         subCategories: ["tococo",],
-        imageUrl: "/Images/ID43.png",
+        imageUrl: "images/ID43.png",
         date: "2025-03-19",
     },
     {
@@ -350,7 +350,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ふぃり",
         mainCategory: "mesugakissa",
         subCategories: ["firi",],
-        imageUrl: "/Images/ID44.png",
+        imageUrl: "images/ID44.png",
         date: "2025-03-19",
     },
     {
@@ -358,7 +358,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ、薙。",
         mainCategory: "mesugakissa",
         subCategories: ["hime","nagi",],
-        imageUrl: "/Images/ID45.png",
+        imageUrl: "images/ID45.png",
         date: "2025-03-19",
     },
     {
@@ -366,7 +366,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ、薙。",
         mainCategory: "mesugakissa",
         subCategories: ["hime","nagi",],
-        imageUrl: "/Images/ID46.png",
+        imageUrl: "images/ID46.png",
         date: "2025-03-19",
     },
     {
@@ -374,7 +374,7 @@ export const galleryItems: GalleryItem[] = [
         title: "Firanty",
         mainCategory: "mesugakissa",
         subCategories: ["firanty",],
-        imageUrl: "/Images/ID47.png",
+        imageUrl: "images/ID47.png",
         date: "2025-03-19",
     },
     {
@@ -382,7 +382,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ふぃり",
         mainCategory: "mesugakissa",
         subCategories: ["firi",],
-        imageUrl: "/Images/ID48.png",
+        imageUrl: "images/ID48.png",
         date: "2025-03-19",
     },
     {
@@ -390,7 +390,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ、薙。",
         mainCategory: "mesugakissa",
         subCategories: ["hime","nagi",],
-        imageUrl: "/Images/ID49.png",
+        imageUrl: "images/ID49.png",
         date: "2025-03-19",
     },
     {
@@ -398,7 +398,7 @@ export const galleryItems: GalleryItem[] = [
         title: "薙。",
         mainCategory: "mesugakissa",
         subCategories: ["nagi",],
-        imageUrl: "/Images/ID50.png",
+        imageUrl: "images/ID50.png",
         date: "2025-03-19",
     },
     {
@@ -406,7 +406,7 @@ export const galleryItems: GalleryItem[] = [
         title: "とここ",
         mainCategory: "mesugakissa",
         subCategories: ["tococo",],
-        imageUrl: "/Images/ID51.png",
+        imageUrl: "images/ID51.png",
         date: "2025-03-19",
     },
     {
@@ -414,7 +414,7 @@ export const galleryItems: GalleryItem[] = [
         title: "とここ",
         mainCategory: "mesugakissa",
         subCategories: ["tococo",],
-        imageUrl: "/Images/ID52.png",
+        imageUrl: "images/ID52.png",
         date: "2025-03-19",
     },
     {
@@ -422,7 +422,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ふぃり",
         mainCategory: "mesugakissa",
         subCategories: ["firi",],
-        imageUrl: "/Images/ID53.png",
+        imageUrl: "images/ID53.png",
         date: "2025-03-19",
     },
     {
@@ -430,7 +430,7 @@ export const galleryItems: GalleryItem[] = [
         title: "薙。",
         mainCategory: "mesugakissa",
         subCategories: ["nagi",],
-        imageUrl: "/Images/ID54.png",
+        imageUrl: "images/ID54.png",
         date: "2025-03-19",
     },
     {
@@ -438,7 +438,7 @@ export const galleryItems: GalleryItem[] = [
         title: "わぎり",
         mainCategory: "mesugakissa",
         subCategories: ["wagiri",],
-        imageUrl: "/Images/ID55.png",
+        imageUrl: "images/ID55.png",
         date: "2025-03-19",
     },
     {
@@ -446,7 +446,7 @@ export const galleryItems: GalleryItem[] = [
         title: "わぎり",
         mainCategory: "mesugakissa",
         subCategories: ["wagiri",],
-        imageUrl: "/Images/ID56.png",
+        imageUrl: "images/ID56.png",
         date: "2025-03-19",
     },
     {
@@ -454,7 +454,7 @@ export const galleryItems: GalleryItem[] = [
         title: "わぎり",
         mainCategory: "mesugakissa",
         subCategories: ["wagiri",],
-        imageUrl: "/Images/ID57.png",
+        imageUrl: "images/ID57.png",
         date: "2025-03-19",
     },
     {
@@ -462,7 +462,7 @@ export const galleryItems: GalleryItem[] = [
         title: "薙。",
         mainCategory: "mesugakissa",
         subCategories: ["nagi",],
-        imageUrl: "/Images/ID58.png",
+        imageUrl: "images/ID58.png",
         date: "2025-03-19",
     },
     {
@@ -470,7 +470,7 @@ export const galleryItems: GalleryItem[] = [
         title: "Celestia",
         mainCategory: "mesugakissa",
         subCategories: ["celestia",],
-        imageUrl: "/Images/ID59.png",
+        imageUrl: "images/ID59.png",
         date: "2025-03-19",
     },
     {
@@ -478,7 +478,7 @@ export const galleryItems: GalleryItem[] = [
         title: "めかにゃんこ",
         mainCategory: "mesugakissa",
         subCategories: ["mekanyanko",],
-        imageUrl: "/Images/ID60.png",
+        imageUrl: "images/ID60.png",
         date: "2025-03-19",
     },
     {
@@ -486,7 +486,7 @@ export const galleryItems: GalleryItem[] = [
         title: "めかにゃんこ",
         mainCategory: "mesugakissa",
         subCategories: ["mekanyanko",],
-        imageUrl: "/Images/ID61.png",
+        imageUrl: "images/ID61.png",
         date: "2025-03-19",
     },
     {
@@ -494,7 +494,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ユークリウッド",
         mainCategory: "mesugakissa",
         subCategories: ["eucliwood",],
-        imageUrl: "/Images/ID62.png",
+        imageUrl: "images/ID62.png",
         date: "2025-03-19",
     },
     {
@@ -502,7 +502,7 @@ export const galleryItems: GalleryItem[] = [
         title: "るりお君",
         mainCategory: "mesugakissa",
         subCategories: ["rurio",],
-        imageUrl: "/Images/ID63.png",
+        imageUrl: "images/ID63.png",
         date: "2025-02-19",
     },
     {
@@ -510,7 +510,7 @@ export const galleryItems: GalleryItem[] = [
         title: "るりお君",
         mainCategory: "mesugakissa",
         subCategories: ["rurio",],
-        imageUrl: "/Images/ID64.png",
+        imageUrl: "images/ID64.png",
         date: "2025-02-19",
     },
     {
@@ -518,7 +518,7 @@ export const galleryItems: GalleryItem[] = [
         title: "るりお君",
         mainCategory: "mesugakissa",
         subCategories: ["rurio",],
-        imageUrl: "/Images/ID65.png",
+        imageUrl: "images/ID65.png",
         date: "2025-02-19",
     },
     {
@@ -526,7 +526,7 @@ export const galleryItems: GalleryItem[] = [
         title: "clow_",
         mainCategory: "mesugakissa",
         subCategories: ["clow",],
-        imageUrl: "/Images/ID66.png",
+        imageUrl: "images/ID66.png",
         date: "2025-01-08",
     },
     {
@@ -534,7 +534,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ぽめらん",
         mainCategory: "mesugakissa",
         subCategories: ["pomeran",],
-        imageUrl: "/Images/ID67.png",
+        imageUrl: "images/ID67.png",
         date: "2025-01-08",
     },
     {
@@ -542,7 +542,7 @@ export const galleryItems: GalleryItem[] = [
         title: "がんもん",
         mainCategory: "mesugakissa",
         subCategories: ["ganmon",],
-        imageUrl: "/Images/ID68.png",
+        imageUrl: "images/ID68.png",
         date: "2025-01-08",
     },
     {
@@ -550,7 +550,7 @@ export const galleryItems: GalleryItem[] = [
         title: "がんもん",
         mainCategory: "mesugakissa",
         subCategories: ["ganmon",],
-        imageUrl: "/Images/ID69.png",
+        imageUrl: "images/ID69.png",
         date: "2025-01-08",
     },
     {
@@ -558,7 +558,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ユークリウッド",
         mainCategory: "mesugakissa",
         subCategories: ["eucliwood",],
-        imageUrl: "/Images/ID70.png",
+        imageUrl: "images/ID70.png",
         date: "2025-01-08",
     },
     {
@@ -566,7 +566,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ",
         mainCategory: "mesugakissa",
         subCategories: ["hime",],
-        imageUrl: "/Images/ID71.png",
+        imageUrl: "images/ID71.png",
         date: "2025-01-15",
     },
     {
@@ -574,7 +574,7 @@ export const galleryItems: GalleryItem[] = [
         title: "キルト",
         mainCategory: "mesugakissa",
         subCategories: ["kiruto",],
-        imageUrl: "/Images/ID72.png",
+        imageUrl: "images/ID72.png",
         date: "2025-01-15",
     },
     {
@@ -582,7 +582,7 @@ export const galleryItems: GalleryItem[] = [
         title: "まむる",
         mainCategory: "mesugakissa",
         subCategories: ["mamuru",],
-        imageUrl: "/Images/ID73.png",
+        imageUrl: "images/ID73.png",
         date: "2025-01-15",
     },
     {
@@ -590,7 +590,7 @@ export const galleryItems: GalleryItem[] = [
         title: "らぎ太",
         mainCategory: "mesugakissa",
         subCategories: ["ragita",],
-        imageUrl: "/Images/ID74.png",
+        imageUrl: "images/ID74.png",
         date: "2025-01-15",
     },
     {
@@ -598,7 +598,7 @@ export const galleryItems: GalleryItem[] = [
         title: "なのは",
         mainCategory: "mesugakissa",
         subCategories: ["nanoha",],
-        imageUrl: "/Images/ID75.png",
+        imageUrl: "images/ID75.png",
         date: "2025-01-15",
     },
     {
@@ -606,7 +606,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ふぃり",
         mainCategory: "mesugakissa",
         subCategories: ["firi",],
-        imageUrl: "/Images/ID76.png",
+        imageUrl: "images/ID76.png",
         date: "2025-01-15",
     },
     {
@@ -614,7 +614,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ふぃり",
         mainCategory: "mesugakissa",
         subCategories: ["firi",],
-        imageUrl: "/Images/ID77.png",
+        imageUrl: "images/ID77.png",
         date: "2025-01-15",
     },
     {
@@ -622,7 +622,7 @@ export const galleryItems: GalleryItem[] = [
         title: "clow_",
         mainCategory: "mesugakissa",
         subCategories: ["clow",],
-        imageUrl: "/Images/ID78.png",
+        imageUrl: "images/ID78.png",
         date: "2025-01-22",
     },
     {
@@ -630,7 +630,7 @@ export const galleryItems: GalleryItem[] = [
         title: "Celestia",
         mainCategory: "mesugakissa",
         subCategories: ["celestia",],
-        imageUrl: "/Images/ID79.png",
+        imageUrl: "images/ID79.png",
         date: "2025-01-22",
     },
     {
@@ -638,7 +638,7 @@ export const galleryItems: GalleryItem[] = [
         title: "あまちじょんこ",
         mainCategory: "mesugakissa",
         subCategories: ["jyonko",],
-        imageUrl: "/Images/ID80.png",
+        imageUrl: "images/ID80.png",
         date: "2025-01-22",
     },
     {
@@ -646,7 +646,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ふぃり",
         mainCategory: "mesugakissa",
         subCategories: ["firi",],
-        imageUrl: "/Images/ID81.png",
+        imageUrl: "images/ID81.png",
         date: "2025-01-15",
     },
     {
@@ -654,7 +654,7 @@ export const galleryItems: GalleryItem[] = [
         title: "るりお君",
         mainCategory: "mesugakissa",
         subCategories: ["rurio",],
-        imageUrl: "/Images/ID82.png",
+        imageUrl: "images/ID82.png",
         date: "2025-03-26",
     },
     {
@@ -662,7 +662,7 @@ export const galleryItems: GalleryItem[] = [
         title: "るりお君",
         mainCategory: "mesugakissa",
         subCategories: ["rurio",],
-        imageUrl: "/Images/ID83.png",
+        imageUrl: "images/ID83.png",
         date: "2025-03-26",
     },
     {
@@ -670,7 +670,7 @@ export const galleryItems: GalleryItem[] = [
         title: "るりお君",
         mainCategory: "mesugakissa",
         subCategories: ["rurio",],
-        imageUrl: "/Images/ID84.png",
+        imageUrl: "images/ID84.png",
         date: "2025-03-26",
     },
     {
@@ -678,7 +678,7 @@ export const galleryItems: GalleryItem[] = [
         title: "宮坂稲荷",
         mainCategory: "mesugakissa",
         subCategories: ["miyasaka",],
-        imageUrl: "/Images/ID85.png",
+        imageUrl: "images/ID85.png",
         date: "2025-03-26",
     },
     {
@@ -686,7 +686,7 @@ export const galleryItems: GalleryItem[] = [
         title: "あまちじょんこ",
         mainCategory: "mesugakissa",
         subCategories: ["jyonko",],
-        imageUrl: "/Images/ID86.png",
+        imageUrl: "images/ID86.png",
         date: "2025-03-26",
     },
     {
@@ -694,7 +694,7 @@ export const galleryItems: GalleryItem[] = [
         title: "Celestia",
         mainCategory: "mesugakissa",
         subCategories: ["celestia",],
-        imageUrl: "/Images/ID87.png",
+        imageUrl: "images/ID87.png",
         date: "2025-03-26",
     },
     {
@@ -702,7 +702,7 @@ export const galleryItems: GalleryItem[] = [
         title: "るりお君",
         mainCategory: "mesugakissa",
         subCategories: ["rurio",],
-        imageUrl: "/Images/ID88.png",
+        imageUrl: "images/ID88.png",
         date: "2025-03-26",
     },
     {
@@ -710,7 +710,7 @@ export const galleryItems: GalleryItem[] = [
         title: "めかにゃんこ",
         mainCategory: "mesugakissa",
         subCategories: ["mekanyanko",],
-        imageUrl: "/Images/ID89.png",
+        imageUrl: "images/ID89.png",
         date: "2025-03-26",
     },
     {
@@ -718,7 +718,7 @@ export const galleryItems: GalleryItem[] = [
         title: "がんもん",
         mainCategory: "mesugakissa",
         subCategories: ["ganmon",],
-        imageUrl: "/Images/ID90.png",
+        imageUrl: "images/ID90.png",
         date: "2025-03-26",
     },
     {
@@ -726,7 +726,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ",
         mainCategory: "mesugakissa",
         subCategories: ["hime",],
-        imageUrl: "/Images/ID91.png",
+        imageUrl: "images/ID91.png",
         date: "2025-03-26",
     },
     {
@@ -734,7 +734,7 @@ export const galleryItems: GalleryItem[] = [
         title: "がんもん",
         mainCategory: "mesugakissa",
         subCategories: ["ganmon",],
-        imageUrl: "/Images/ID92.png",
+        imageUrl: "images/ID92.png",
         date: "2025-03-26",
     },
     {
@@ -742,7 +742,7 @@ export const galleryItems: GalleryItem[] = [
         title: "Celestia",
         mainCategory: "mesugakissa",
         subCategories: ["celestia",],
-        imageUrl: "/Images/ID93.png",
+        imageUrl: "images/ID93.png",
         date: "2025-03-26",
     },
     {
@@ -750,7 +750,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ユークリウッド",
         mainCategory: "mesugakissa",
         subCategories: ["eucliwood",],
-        imageUrl: "/Images/ID94.png",
+        imageUrl: "images/ID94.png",
         date: "2025-04-02",
     },
     {
@@ -758,7 +758,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ユークリウッド",
         mainCategory: "mesugakissa",
         subCategories: ["eucliwood",],
-        imageUrl: "/Images/ID95.png",
+        imageUrl: "images/ID95.png",
         date: "2025-04-02",
     }, 
     {
@@ -766,7 +766,7 @@ export const galleryItems: GalleryItem[] = [
         title: "しづく",
         mainCategory: "mesugakissa",
         subCategories: ["shiduku",],
-        imageUrl: "/Images/ID96.png",
+        imageUrl: "images/ID96.png",
         date: "2025-04-02",
     },
     {
@@ -774,7 +774,7 @@ export const galleryItems: GalleryItem[] = [
         title: "天河サレナ",
         mainCategory: "mesugakissa",
         subCategories: ["sarena",],
-        imageUrl: "/Images/ID97.png",
+        imageUrl: "images/ID97.png",
         date: "2025-04-02",
     },
     {
@@ -782,7 +782,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ぽめらん",
         mainCategory: "mesugakissa",
         subCategories: ["pomeran",],
-        imageUrl: "/Images/ID98.png",
+        imageUrl: "images/ID98.png",
         date: "2025-04-02",
     },
     {
@@ -790,7 +790,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ",
         mainCategory: "mesugakissa",
         subCategories: ["hime",],
-        imageUrl: "/Images/ID99.png",
+        imageUrl: "images/ID99.png",
         date: "2025-04-02",
     },
     {
@@ -798,7 +798,7 @@ export const galleryItems: GalleryItem[] = [
         title: "宮坂稲荷",
         mainCategory: "mesugakissa",
         subCategories: ["miyasaka",],
-        imageUrl: "/Images/ID100.png",
+        imageUrl: "images/ID100.png",
         date: "2025-04-02",
     },
     {
@@ -806,7 +806,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ぽめらん",
         mainCategory: "mesugakissa",
         subCategories: ["pomeran",],
-        imageUrl: "/Images/ID101.png",
+        imageUrl: "images/ID101.png",
         date: "2025-04-02",
     },
     {
@@ -814,7 +814,7 @@ export const galleryItems: GalleryItem[] = [
         title: "わぎり",
         mainCategory: "mesugakissa",
         subCategories: ["wagiri",],
-        imageUrl: "/Images/ID102.png",
+        imageUrl: "images/ID102.png",
         date: "2025-04-02",
     },
     {
@@ -822,7 +822,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ぽめらん",
         mainCategory: "mesugakissa",
         subCategories: ["pomeran",],
-        imageUrl: "/Images/ID103.png",
+        imageUrl: "images/ID103.png",
         date: "2025-04-02",
     },
     {
@@ -830,7 +830,7 @@ export const galleryItems: GalleryItem[] = [
         title: "松本莉奈",
         mainCategory: "mesugakissa",
         subCategories: ["matumotorina",],
-        imageUrl: "/Images/ID104.png",
+        imageUrl: "images/ID104.png",
         date: "2025-04-02",
     },
     {
@@ -838,7 +838,7 @@ export const galleryItems: GalleryItem[] = [
         title: "松本莉奈",
         mainCategory: "mesugakissa",
         subCategories: ["matumotorina",],
-        imageUrl: "/Images/ID105.png",
+        imageUrl: "images/ID105.png",
         date: "2025-04-02",
     },
     {
@@ -846,7 +846,7 @@ export const galleryItems: GalleryItem[] = [
         title: "薙。",
         mainCategory: "mesugakissa",
         subCategories: ["nagi",],
-        imageUrl: "/Images/ID106.png",
+        imageUrl: "images/ID106.png",
         date: "2025-04-09",
     },
     {
@@ -854,7 +854,7 @@ export const galleryItems: GalleryItem[] = [
         title: "clow_",
         mainCategory: "mesugakissa",
         subCategories: ["clow",],
-        imageUrl: "/Images/ID107.png",
+        imageUrl: "images/ID107.png",
         date: "2025-04-09",
     },
     {
@@ -862,7 +862,7 @@ export const galleryItems: GalleryItem[] = [
         title: "がんもん",
         mainCategory: "mesugakissa",
         subCategories: ["ganmon",],
-        imageUrl: "/Images/ID108.png",
+        imageUrl: "images/ID108.png",
         date: "2025-04-09",
     },
     {
@@ -870,7 +870,7 @@ export const galleryItems: GalleryItem[] = [
         title: "しづく",
         mainCategory: "mesugakissa",
         subCategories: ["shiduku",],
-        imageUrl: "/Images/ID109.png",
+        imageUrl: "images/ID109.png",
         date: "2025-04-09",
     },
     {
@@ -878,7 +878,7 @@ export const galleryItems: GalleryItem[] = [
         title: "あまちじょんこ",
         mainCategory: "mesugakissa",
         subCategories: ["jyonko",],
-        imageUrl: "/Images/ID110.png",
+        imageUrl: "images/ID110.png",
         date: "2025-04-09",
     },
     {
@@ -886,7 +886,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ふぃり",
         mainCategory: "mesugakissa",
         subCategories: ["firi",],
-        imageUrl: "/Images/ID111.png",
+        imageUrl: "images/ID111.png",
         date: "2025-04-09",
     },
     {
@@ -894,7 +894,7 @@ export const galleryItems: GalleryItem[] = [
         title: "薙。",
         mainCategory: "mesugakissa",
         subCategories: ["nagi",],
-        imageUrl: "/Images/ID112.png",
+        imageUrl: "images/ID112.png",
         date: "2025-04-09",
     },
     {
@@ -902,7 +902,7 @@ export const galleryItems: GalleryItem[] = [
         title: "なのは",
         mainCategory: "mesugakissa",
         subCategories: ["nanoha",],
-        imageUrl: "/Images/ID113.png",
+        imageUrl: "images/ID113.png",
         date: "2025-04-09",
     },
     {
@@ -910,7 +910,7 @@ export const galleryItems: GalleryItem[] = [
         title: "あまちじょんこ",
         mainCategory: "mesugakissa",
         subCategories: ["jyonko",],
-        imageUrl: "/Images/ID114.png",
+        imageUrl: "images/ID114.png",
         date: "2025-04-09",
     },
     {
@@ -918,7 +918,7 @@ export const galleryItems: GalleryItem[] = [
         title: "あまちじょんこ",
         mainCategory: "mesugakissa",
         subCategories: ["jyonko",],
-        imageUrl: "/Images/ID115.png",
+        imageUrl: "images/ID115.png",
         date: "2025-04-09",
     },
     {
@@ -926,7 +926,7 @@ export const galleryItems: GalleryItem[] = [
         title: "キルト",
         mainCategory: "mesugakissa",
         subCategories: ["kiruto",],
-        imageUrl: "/Images/ID116.png",
+        imageUrl: "images/ID116.png",
         date: "2025-04-09",
     },
     {
@@ -934,7 +934,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ",
         mainCategory: "mesugakissa",
         subCategories: ["hime",],
-        imageUrl: "/Images/ID117.png",
+        imageUrl: "images/ID117.png",
         date: "2025-04-09",
     },
     {
@@ -942,7 +942,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ここあ",
         mainCategory: "mesugakissa",
         subCategories: ["cocoa",],
-        imageUrl: "/Images/ID118.png",
+        imageUrl: "images/ID118.png",
         date: "2025-04-16",
     },
     {
@@ -950,7 +950,7 @@ export const galleryItems: GalleryItem[] = [
         title: "Celestia",
         mainCategory: "mesugakissa",
         subCategories: ["celestia",],
-        imageUrl: "/Images/ID119.png",
+        imageUrl: "images/ID119.png",
         date: "2025-04-16",
     },
     {
@@ -958,7 +958,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ここあ",
         mainCategory: "mesugakissa",
         subCategories: ["cocoa",],
-        imageUrl: "/Images/ID120.png",
+        imageUrl: "images/ID120.png",
         date: "2025-04-16",
     },
     {
@@ -966,7 +966,7 @@ export const galleryItems: GalleryItem[] = [
         title: "がんもん",
         mainCategory: "mesugakissa",
         subCategories: ["ganmon",],
-        imageUrl: "/Images/ID121.png",
+        imageUrl: "images/ID121.png",
         date: "2025-04-16",
     },
     {
@@ -974,7 +974,7 @@ export const galleryItems: GalleryItem[] = [
         title: "華杜トトロ",
         mainCategory: "mesugakissa",
         subCategories: ["totoro",],
-        imageUrl: "/Images/ID122.png",
+        imageUrl: "images/ID122.png",
         date: "2025-04-16",
     },
     {
@@ -982,7 +982,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ユークリウッド",
         mainCategory: "mesugakissa",
         subCategories: ["eucliwood",],
-        imageUrl: "/Images/ID123.png",
+        imageUrl: "images/ID123.png",
         date: "2025-04-16",
     },
     {
@@ -990,7 +990,7 @@ export const galleryItems: GalleryItem[] = [
         title: "まむる",
         mainCategory: "mesugakissa",
         subCategories: ["mamuru",],
-        imageUrl: "/Images/ID124.png",
+        imageUrl: "images/ID124.png",
         date: "2025-04-16",
     },
     {
@@ -998,7 +998,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ",
         mainCategory: "mesugakissa",
         subCategories: ["hime",],
-        imageUrl: "/Images/ID125.png",
+        imageUrl: "images/ID125.png",
         date: "2025-04-16",
     },
     {
@@ -1006,7 +1006,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ユークリウッド",
         mainCategory: "mesugakissa",
         subCategories: ["eucliwood",],
-        imageUrl: "/Images/ID126.png",
+        imageUrl: "images/ID126.png",
         date: "2025-04-16",
     },
     {
@@ -1014,7 +1014,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひめ",
         mainCategory: "mesugakissa",
         subCategories: ["hime",],
-        imageUrl: "/Images/ID127.png",
+        imageUrl: "images/ID127.png",
         date: "2025-04-23",
     },
     {
@@ -1022,7 +1022,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ぽめらん",
         mainCategory: "mesugakissa",
         subCategories: ["pomeran",],
-        imageUrl: "/Images/ID128.png",
+        imageUrl: "images/ID128.png",
         date: "2025-04-23",
     },
     {
@@ -1030,7 +1030,7 @@ export const galleryItems: GalleryItem[] = [
         title: "しゃけ",
         mainCategory: "mesugakissa",
         subCategories: ["shake",],
-        imageUrl: "/Images/ID129.png",
+        imageUrl: "images/ID129.png",
         date: "2025-04-23",
     },
     {
@@ -1038,7 +1038,7 @@ export const galleryItems: GalleryItem[] = [
         title: "むぅ",
         mainCategory: "mesugakissa",
         subCategories: ["muu",],
-        imageUrl: "/Images/ID130.png",
+        imageUrl: "images/ID130.png",
         date: "2025-04-23",
     },
     {
@@ -1046,7 +1046,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひよこぴよぴよ",
         mainCategory: "mesugakissa",
         subCategories: ["hiyokopiyopiyo",],
-        imageUrl: "/Images/ID131.png",
+        imageUrl: "images/ID131.png",
         date: "2025-04-23",
     },
     {
@@ -1054,7 +1054,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ぷりも",
         mainCategory: "mesugakissa",
         subCategories: ["purimo",],
-        imageUrl: "/Images/ID132.png",
+        imageUrl: "images/ID132.png",
         date: "2025-04-23",
     },
     {
@@ -1062,7 +1062,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ぷりも",
         mainCategory: "mesugakissa",
         subCategories: ["purimo",],
-        imageUrl: "/Images/ID133.png",
+        imageUrl: "images/ID133.png",
         date: "2025-04-23",
     },
     {
@@ -1070,7 +1070,7 @@ export const galleryItems: GalleryItem[] = [
         title: "むぅ",
         mainCategory: "mesugakissa",
         subCategories: ["muu",],
-        imageUrl: "/Images/ID134.png",
+        imageUrl: "images/ID134.png",
         date: "2025-04-23",
     },
     {
@@ -1078,7 +1078,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ぽめらん",
         mainCategory: "mesugakissa",
         subCategories: ["pomeran",],
-        imageUrl: "/Images/ID135.png",
+        imageUrl: "images/ID135.png",
         date: "2025-04-23",
     },
     {
@@ -1086,7 +1086,7 @@ export const galleryItems: GalleryItem[] = [
         title: "しゃけ",
         mainCategory: "mesugakissa",
         subCategories: ["shake",],
-        imageUrl: "/Images/ID136.png",
+        imageUrl: "images/ID136.png",
         date: "2025-04-23",
     },
     {
@@ -1094,7 +1094,7 @@ export const galleryItems: GalleryItem[] = [
         title: "あめぱん",
         mainCategory: "mesugakissa",
         subCategories: ["amepan",],
-        imageUrl: "/Images/ID137.png",
+        imageUrl: "images/ID137.png",
         date: "2025-04-23",
     },
     {
@@ -1102,7 +1102,7 @@ export const galleryItems: GalleryItem[] = [
         title: "めかにゃんこ",
         mainCategory: "mesugakissa",
         subCategories: ["mekanyanko",],
-        imageUrl: "/Images/ID138.png",
+        imageUrl: "images/ID138.png",
         date: "2025-04-23",
     },
     {
@@ -1110,7 +1110,7 @@ export const galleryItems: GalleryItem[] = [
         title: "しづく",
         mainCategory: "mesugakissa",
         subCategories: ["shiduku",],
-        imageUrl: "/Images/ID139.png",
+        imageUrl: "images/ID139.png",
         date: "2025-04-23",
     },
     {
@@ -1118,7 +1118,7 @@ export const galleryItems: GalleryItem[] = [
         title: "しづく",
         mainCategory: "mesugakissa",
         subCategories: ["shiduku",],
-        imageUrl: "/Images/ID140.png",
+        imageUrl: "images/ID140.png",
         date: "2025-04-23",
     },
     {
@@ -1126,7 +1126,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ひよこぴよぴよ",
         mainCategory: "mesugakissa",
         subCategories: ["hiyokopiyopiyo",],
-        imageUrl: "/Images/ID141.png",
+        imageUrl: "images/ID141.png",
         date: "2025-04-23",
     },
     {
@@ -1134,7 +1134,7 @@ export const galleryItems: GalleryItem[] = [
         title: "がんもん",
         mainCategory: "mesugakissa",
         subCategories: ["ganmon",],
-        imageUrl: "/Images/ID142.png",
+        imageUrl: "images/ID142.png",
         date: "2025-04-23",
     },
     {
@@ -1142,7 +1142,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ぷりも",
         mainCategory: "mesugakissa",
         subCategories: ["purimo",],
-        imageUrl: "/Images/ID143.png",
+        imageUrl: "images/ID143.png",
         date: "2025-04-23",
     },
     {
@@ -1150,7 +1150,7 @@ export const galleryItems: GalleryItem[] = [
         title: "clow_",
         mainCategory: "mesugakissa",
         subCategories: ["clow",],
-        imageUrl: "/Images/ID144.png",
+        imageUrl: "images/ID144.png",
         date: "2025-04-30",
     },
     {
@@ -1158,7 +1158,7 @@ export const galleryItems: GalleryItem[] = [
         title: "clow_",
         mainCategory: "mesugakissa",
         subCategories: ["clow",],
-        imageUrl: "/Images/ID145.png",
+        imageUrl: "images/ID145.png",
         date: "2025-04-30",
     },
     {
@@ -1166,7 +1166,7 @@ export const galleryItems: GalleryItem[] = [
         title: "あまはつ",
         mainCategory: "mesugakissa",
         subCategories: ["amahatu",],
-        imageUrl: "/Images/ID146.png",
+        imageUrl: "images/ID146.png",
         date: "2025-04-30",
     },
     {
@@ -1174,7 +1174,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ふぃり",
         mainCategory: "mesugakissa",
         subCategories: ["firi",],
-        imageUrl: "/Images/ID147.png",
+        imageUrl: "images/ID147.png",
         date: "2025-04-30",
     },
     {
@@ -1182,7 +1182,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ファム",
         mainCategory: "mesugakissa",
         subCategories: ["fam",],
-        imageUrl: "/Images/ID148.png",
+        imageUrl: "images/ID148.png",
         date: "2025-04-30",
     },
     {
@@ -1190,7 +1190,7 @@ export const galleryItems: GalleryItem[] = [
         title: "メノア",
         mainCategory: "mesugakissa",
         subCategories: ["menoa",],
-        imageUrl: "/Images/ID149.png",
+        imageUrl: "images/ID149.png",
         date: "2025-04-30",
     },
     {
@@ -1198,7 +1198,7 @@ export const galleryItems: GalleryItem[] = [
         title: "あまはつ",
         mainCategory: "mesugakissa",
         subCategories: ["amahatu",],
-        imageUrl: "/Images/ID150.png",
+        imageUrl: "images/ID150.png",
         date: "2025-04-30",
     },
     {
@@ -1206,7 +1206,7 @@ export const galleryItems: GalleryItem[] = [
         title: "あめぱん",
         mainCategory: "mesugakissa",
         subCategories: ["amepan",],
-        imageUrl: "/Images/ID137.png",
+        imageUrl: "images/ID137.png",
         date: "2025-04-23",
     },
     {
@@ -1214,7 +1214,7 @@ export const galleryItems: GalleryItem[] = [
         title: "ふぃり",
         mainCategory: "mesugakissa",
         subCategories: ["firi",],
-        imageUrl: "/Images/ID152.png",
+        imageUrl: "images/ID152.png",
         date: "2025-04-30",
     },
 ]

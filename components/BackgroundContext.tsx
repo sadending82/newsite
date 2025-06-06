@@ -10,7 +10,7 @@ interface BackgroundContextType {
 const BackgroundContext = createContext<BackgroundContextType | null>(null);
 
 export const BackgroundProvider = ({ children } : { children : ReactNode }) => {
-    const [background, setBackground] = useState("/Images/ID1.png");
+    const [background, setBackground] = useState("Images/mesugakissa_bg.png");
 
     return (
         <BackgroundContext.Provider value={{background, setBackground}}>
