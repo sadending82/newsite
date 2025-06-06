@@ -101,7 +101,7 @@ export default function CategorySidebarProps({
             </div>
 
             <div className="
-                fles-1
+                flex-1
                 overflow-scroll [&::-webkit-scrollbar]:hidden
                 p-4 space-y-2
                 "
@@ -183,10 +183,10 @@ export default function CategorySidebarProps({
                 <Menu className="h-4 w-4" />
                 <span className="ml-2">カテゴリー</span>
             </Button>
-
-            <div className="hidde md:block bg-white/50 w-64 border-r h-full">
+  
+            <div className="hidden md:block bg-white/50 w-64 border-r h-full">
                 <SidebarContent />
-            </div>
+            </div>         
 
             <AnimatePresence>
                 {isMobileOpen && (

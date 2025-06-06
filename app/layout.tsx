@@ -24,9 +24,11 @@ export default function RootLayout({
         <BackgroundProvider>
           <BackgroundWrapper>
             {children}
-            <Toaster position="top-center" containerClassName={japaneseFont.className} toastOptions={{duration: 2000}}/>
           </BackgroundWrapper>
         </BackgroundProvider>
+        <div className="fixed top-4 right-4">
+          <Toaster containerClassName={japaneseFont.className} toastOptions={{duration: 2000}}/>
+        </div>
       </body>
     </html>
   )

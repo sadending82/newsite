@@ -156,22 +156,13 @@ export default function Gallery() {
         onSubCategoryClick={handleSubCategoryClick}
       />
 
-      <div className="
-      flex-1
-      overflow-scroll
-      [&::-webkit-scrollbar]:hidden
-      transition=colors
-      duration-300"
-      style={{
-        scrollbarWidth: 'none',
-        msOverflowStyle: 'none',
-      }}
+      <div className="flex-1 overflow-scroll [&::-webkit-scrollbar]:hidden transition=colors duration-300"
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', }}
       >
         <main className="max-w-[90%] mx-auto px-4 py-12 md:px-8 lg:px-12 xl:max-w-[85%] 2xl:max-w-[80%]">
           <h1 className="text-3xl font-bold text-center mb-8">Gallery</h1>
 
           <div className={`flex flex-wrap justify-center items-center gap-4 mb-8 ${japaneseFont.className}`}>
-            {/* 월별 필터 드롭다운 */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" className="flex items-center gap-2">
@@ -209,7 +200,7 @@ export default function Gallery() {
                   onClick={() => handleImageClick(index)}
                 >
                   <Card className="overflow-hidden h-full cursor-pointer" >
-                    <div className="relative aspect-[4/3] bg-muted/30">
+                    <div className="relative aspect-[1/1] bg-muted/30">
                       <Image
                       src={`/smallImages/ID${item.id}.png` || "/placeholder.svg"}
                       alt={item.title}
