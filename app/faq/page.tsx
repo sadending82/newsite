@@ -20,23 +20,23 @@ const faqData: FAQItem[] = [
             <div className = "sapce-y-4">
                 <p>先ず、しばらくロードを待ってください。</p>
                 &nbsp;
-                <p>このサイトは多くの写真の管理のために外部にサーバーをおいています。</p>
-                <p>そのサーバーは常にOnの状態ではなく、写真の要請がある場合起動し始めます。</p>
-                <p>その故に最初の写真だけロードの時間が長くなる場合があります。</p>
+                <p>このサイトは多くの写真の管理のために外部にサーバーをおいています。
+                そのサーバーは常にOnの状態ではなく、写真の要請がある場合起動し始めます。
+                その故に最初の写真だけロードの時間が長くなる場合があります。</p>
                 &nbsp;
                 <p>上の状況ではない場合はContactに書いてある連絡先にご報告いただけるとなるべく早めに措置いたします。</p>
             </div>
             ),
     },
-    {
+    { 
         id: 2,
         question: "写真のアップロードはいつ行われますか？",
         answer: (
             <div className = "sapce-y-4">
             <p>サイト主が時間が空いた時にランダムにアップロードいたします。</p>
             &nbsp;
-            <p>基本的には一週間に一回はアップロードするつもりですが、</p>
-            <p>大型アップデートや一身上の都合などがある場合はアップロードされない場合もあります。</p>
+            <p>基本的には一週間に一回はアップロードするつもりですが、
+            大型アップデートや一身上の都合などがある場合はアップロードされない場合もあります。</p>
             </div>
         ),
     }
@@ -46,7 +46,7 @@ function FAQAccordion({ item }: { item: FAQItem}) {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className="px-6">
+        <div className="px-6 max-w-6xl mx-auto">
             <div className="border border-gray-200 rounded-lg overflow-hidden">
                 <button
                     onClick={() => setIsOpen(!isOpen)}
@@ -85,7 +85,7 @@ function FAQAccordion({ item }: { item: FAQItem}) {
 export default function FAQPage() {
     return (
         <div className="min-h-screen py-12">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl font-bold text-gray-900 mb-4">FAQ</h1>
                 </div>
@@ -97,7 +97,7 @@ export default function FAQPage() {
                 ))}
             </div>
 
-            <div className="mt-12 text-center px-6">
+            <div className="max-w-6xl mx-auto mt-12 text-center px-6">
                 <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
                     <h2 className={`text-2xl font-semibold text-gray-900 mb-4 ${japaneseFont.className}`}>まだ解決できてないでしょうか？</h2>
                     <p className={`text-gray-600 mb-6 ${japaneseFont.className}`}>気楽にDMください！</p>

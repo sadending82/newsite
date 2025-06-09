@@ -8,10 +8,10 @@ export default function Home() {
     <main className="container mx-auto px-4 py-12 md:py-24">
 
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">Sady&apos;s Memory Box</h1>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">Memory Box</h1>
           <div className={japaneseFont.className}>
           <p className={`max-w-2xl mx-auto text-lg md:text-xl py-5`}>
-            サディーが訪ねたイベントで撮影した<br/>写真を残しているギャラリーです。
+            思い出の集合物。
           </p>
           </div>
           <div className={`mt-8 flex justify-center gap-4 ${japaneseFont.className}`}>

@@ -1217,6 +1217,390 @@ export const galleryItems: GalleryItem[] = [
         imageUrl: "images/ID152.png",
         date: "2025-04-30",
     },
+    {
+        id: 153,
+        title: "ファム",
+        mainCategory: "mesugakissa",
+        subCategories: ["fam",],
+        imageUrl: "images/ID153.png",
+        date: "2025-05-07",
+    },
+    {
+        id: 154,
+        title: "宮坂稲荷",
+        mainCategory: "mesugakissa",
+        subCategories: ["miyasaka",],
+        imageUrl: "images/ID154.png",
+        date: "2025-05-07",
+    },
+    {
+        id: 155,
+        title: "松本莉奈",
+        mainCategory: "mesugakissa",
+        subCategories: ["matumotorina",],
+        imageUrl: "images/ID155.png",
+        date: "2025-05-07",
+    },
+    {
+        id: 156,
+        title: "ファム",
+        mainCategory: "mesugakissa",
+        subCategories: ["fam",],
+        imageUrl: "images/ID156.png",
+        date: "2025-05-07",
+    },
+    {
+        id: 157,
+        title: "ゆすりん",
+        mainCategory: "mesugakissa",
+        subCategories: ["yusurin",],
+        imageUrl: "images/ID157.png",
+        date: "2025-05-07",
+    },
+    {
+        id: 158,
+        title: "ゆすりん",
+        mainCategory: "mesugakissa",
+        subCategories: ["yusurin",],
+        imageUrl: "images/ID158.png",
+        date: "2025-05-07",
+    },
+    {
+        id: 159,
+        title: "ファム",
+        mainCategory: "mesugakissa",
+        subCategories: ["fam",],
+        imageUrl: "images/ID159.png",
+        date: "2025-05-07",
+    },
+    {
+        id: 160,
+        title: "ぷりも",
+        mainCategory: "mesugakissa",
+        subCategories: ["purimo",],
+        imageUrl: "images/ID160.png",
+        date: "2025-05-07",
+    },
+    {
+        id: 161,
+        title: "ぷりも",
+        mainCategory: "mesugakissa",
+        subCategories: ["purimo",],
+        imageUrl: "images/ID161.png",
+        date: "2025-05-07",
+    },
+    {
+        id: 162,
+        title: "松本莉奈",
+        mainCategory: "mesugakissa",
+        subCategories: ["matumotorina",],
+        imageUrl: "images/ID162.png",
+        date: "2025-05-07",
+    },
+    {
+        id: 163,
+        title: "ぷりも",
+        mainCategory: "mesugakissa",
+        subCategories: ["purimo",],
+        imageUrl: "images/ID163.png",
+        date: "2025-05-07",
+    },
+    {
+        id: 164,
+        title: "ひめ",
+        mainCategory: "mesugakissa",
+        subCategories: ["hime",],
+        imageUrl: "images/ID164.png",
+        date: "2025-05-07",
+    },
+    {
+        id: 165,
+        title: "たばね",
+        mainCategory: "mesugakissa",
+        subCategories: ["tabane",],
+        imageUrl: "images/ID165.png",
+        date: "2025-05-07",
+    },
+    {
+        id: 166,
+        title: "るりお君",
+        mainCategory: "mesugakissa",
+        subCategories: ["rurio",],
+        imageUrl: "images/ID166.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 167,
+        title: "るりお君",
+        mainCategory: "mesugakissa",
+        subCategories: ["rurio",],
+        imageUrl: "images/ID167.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 168,
+        title: "るりお君",
+        mainCategory: "mesugakissa",
+        subCategories: ["rurio",],
+        imageUrl: "images/ID168.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 169,
+        title: "るりお君",
+        mainCategory: "mesugakissa",
+        subCategories: ["rurio",],
+        imageUrl: "images/ID169.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 170,
+        title: "ひめ",
+        mainCategory: "mesugakissa",
+        subCategories: ["hime",],
+        imageUrl: "images/ID170.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 171,
+        title: "Firanty, がんもん",
+        mainCategory: "mesugakissa",
+        subCategories: ["firanty","ganmon"],
+        imageUrl: "images/ID171.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 172,
+        title: "Firanty",
+        mainCategory: "mesugakissa",
+        subCategories: ["firanty",],
+        imageUrl: "images/ID172.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 173,
+        title: "しゃけ",
+        mainCategory: "mesugakissa",
+        subCategories: ["shake",],
+        imageUrl: "images/ID173.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 174,
+        title: "メノア",
+        mainCategory: "mesugakissa",
+        subCategories: ["menoa",],
+        imageUrl: "images/ID174.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 175,
+        title: "わぎり",
+        mainCategory: "mesugakissa",
+        subCategories: ["wagiri",],
+        imageUrl: "images/ID175.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 176,
+        title: "Celestia",
+        mainCategory: "mesugakissa",
+        subCategories: ["celestia",],
+        imageUrl: "images/ID176.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 177,
+        title: "るりお君",
+        mainCategory: "mesugakissa",
+        subCategories: ["rurio",],
+        imageUrl: "images/ID177.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 178,
+        title: "めかにゃんこ",
+        mainCategory: "mesugakissa",
+        subCategories: ["mekanyanko",],
+        imageUrl: "images/ID178.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 179,
+        title: "めかにゃんこ",
+        mainCategory: "mesugakissa",
+        subCategories: ["mekanyanko",],
+        imageUrl: "images/ID179.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 180,
+        title: "わぎり",
+        mainCategory: "mesugakissa",
+        subCategories: ["wagiri",],
+        imageUrl: "images/ID180.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 181,
+        title: "Firanty",
+        mainCategory: "mesugakissa",
+        subCategories: ["firanty",],
+        imageUrl: "images/ID181.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 182,
+        title: "めろんれもん",
+        mainCategory: "mesugakissa",
+        subCategories: ["melonlemon",],
+        imageUrl: "images/ID182.png",
+        date: "2025-05-14",
+    },
+    {
+        id: 183,
+        title: "めろんれもん",
+        mainCategory: "mesugakissa",
+        subCategories: ["melonlemon",],
+        imageUrl: "images/ID183.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 184,
+        title: "しづく",
+        mainCategory: "mesugakissa",
+        subCategories: ["shiduku",],
+        imageUrl: "images/ID184.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 185,
+        title: "ふぃり",
+        mainCategory: "mesugakissa",
+        subCategories: ["firi",],
+        imageUrl: "images/ID185.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 186,
+        title: "ふぃり",
+        mainCategory: "mesugakissa",
+        subCategories: ["firi",],
+        imageUrl: "images/ID186.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 187,
+        title: "キルト",
+        mainCategory: "mesugakissa",
+        subCategories: ["kiruto",],
+        imageUrl: "images/ID187.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 188,
+        title: "まっちん",
+        mainCategory: "mesugakissa",
+        subCategories: ["machin",],
+        imageUrl: "images/ID188.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 189,
+        title: "キルト",
+        mainCategory: "mesugakissa",
+        subCategories: ["kiruto",],
+        imageUrl: "images/ID189.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 190,
+        title: "ラコシンジゲート",
+        mainCategory: "mesugakissa",
+        subCategories: ["rako",],
+        imageUrl: "images/ID190.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 191,
+        title: "ふぃり, ラコシンジゲート",
+        mainCategory: "mesugakissa",
+        subCategories: ["firi","rako",],
+        imageUrl: "images/ID191.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 192,
+        title: "ふぃり, ラコシンジゲート",
+        mainCategory: "mesugakissa",
+        subCategories: ["firi","rako",],
+        imageUrl: "images/ID192.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 193,
+        title: "ふぃり, ラコシンジゲート",
+        mainCategory: "mesugakissa",
+        subCategories: ["firi","rako",],
+        imageUrl: "images/ID193.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 194,
+        title: "ふぃり, ラコシンジゲート",
+        mainCategory: "mesugakissa",
+        subCategories: ["firi","rako",],
+        imageUrl: "images/ID194.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 195,
+        title: "ふぃり",
+        mainCategory: "mesugakissa",
+        subCategories: ["firi",],
+        imageUrl: "images/ID195.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 196,
+        title: "ふぃり",
+        mainCategory: "mesugakissa",
+        subCategories: ["firi",],
+        imageUrl: "images/ID196.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 197,
+        title: "ひめ, キルト",
+        mainCategory: "mesugakissa",
+        subCategories: ["hime", "kiruto",],
+        imageUrl: "images/ID197.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 198,
+        title: "キルト",
+        mainCategory: "mesugakissa",
+        subCategories: ["kiruto",],
+        imageUrl: "images/ID198.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 199,
+        title: "しづく",
+        mainCategory: "mesugakissa",
+        subCategories: ["shiduku",],
+        imageUrl: "images/ID199.png",
+        date: "2025-05-21",
+    },
+    {
+        id: 200,
+        title: "ゆゆち",
+        mainCategory: "mesugakissa",
+        subCategories: ["yuyuchi",],
+        imageUrl: "images/ID200.png",
+        date: "2025-05-21",
+    },
 ]
     
 export const getGalleryItemsByMonth = (year: number, month: number): GalleryItem[] => {
@@ -1241,7 +1625,6 @@ export const getAvailableMonths = (): { year: number; month: number;}[] => {
         return { year, month}
         })
         .sort((a, b) => {
-        // 최신순 정렬
         if (a.year !== b.year) return b.year - a.year
         return b.month - a.month
     })
@@ -1261,7 +1644,6 @@ export const groupGalleryItemsByMonth = (items: GalleryItem[]): Record<string, G
     groups[key].push(item)
     })
 
-// 각 그룹 내에서도 최신순 정렬
     Object.keys(groups).forEach((key) => {
         groups[key].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     })
@@ -1269,7 +1651,6 @@ export const groupGalleryItemsByMonth = (items: GalleryItem[]): Record<string, G
     return groups
 }
 
-// 갤러리 아이템 관련 유틸리티 함수들
 export const getGalleryItemById = (id: number): GalleryItem | undefined => {
     return galleryItems.find((item) => item.id === id)
 }
@@ -1300,12 +1681,10 @@ export const searchGalleryItems = (query: string): GalleryItem[] => {
     )
 }
 
-// 항상 최신순으로 정렬 (날짜 기준)
 export const sortGalleryItems = (items: GalleryItem[]): GalleryItem[] => {
     return [...items].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
   
-  // 월 이름을 한글로 포맷
 export const formatMonthName = (year: number, month: number): string => {
     return `${year} / ${month}`
 }

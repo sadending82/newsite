@@ -12,7 +12,7 @@ const navItems = [
   { href: "/gallery", label: "Gallery"},
   { href: "/contact", label: "Contact"},
   { href: "/faq", label: "FAQ" },
-  { href: "/update", label: "Update"}
+  { href: "/updates", label: "Updates"}
 ]
 
 export default function Navbar() {

@@ -43,11 +43,15 @@ export const mainCategories: Category[] =[
         {id: "amahatu", name: "あまはつ", color: "", logoUrl: ""},
         {id: "fam", name: "ファム", color: "", logoUrl: ""},
         {id: "menoa", name: "メノア", color: "", logoUrl: ""},
+        {id: "tabane", name: "たばね", color: "", logoUrl: ""},
+        {id: "melonlemon", name: "めろんれもん", color: "", logoUrl: ""},
+        {id: "machin", name: "まっちん", color: "", logoUrl: ""},
+        {id: "rako", name: "ラコシンジゲート", color: "", logoUrl: ""},
+        {id: "yuyuchi", name: "ゆゆち", color: "", logoUrl: ""},
     ]
     }
 ]
 
-// 카테고리 관련 유틸리티 함수들
 export const getCategoryById = (categoryId: string): Category | undefined => {
     return mainCategories.find((category) => category.id === categoryId)
 }
@@ -57,7 +61,6 @@ export const getSubCategoryById = (mainCategoryId: string, subCategoryId: string
     return mainCategory?.children?.find((subCategory) => subCategory.id === subCategoryId)
 }
 
-// 서브 카테고리 ID로 메인 카테고리 찾기
 export const getMainCategoryBySubCategoryId = (subCategoryId: string): Category | undefined => {
     for (const mainCategory of mainCategories) {
     if (mainCategory.children?.some((subCategory) => subCategory.id === subCategoryId)) {

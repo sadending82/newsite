@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
-import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { japaneseFont } from "@/components/fonts"
 import ApiImage from "./apiImage"
@@ -25,7 +24,6 @@ export default function Lightbox({ image, isOpen, onClose }: LightboxProps) {
   const [isLoading, setIsLoading] = useState(true)
   const [dimensions, setDimensions] = useState({ width: 1200, height: 800 })
   const lightboxRef = useRef<HTMLDivElement>(null)
-
   // useEffect(() => {
   //   if (isOpen) {
   //     document.body.style.overflow = "hidden"
@@ -136,18 +134,10 @@ export default function Lightbox({ image, isOpen, onClose }: LightboxProps) {
           margin: "auto",
         }}
         onClick={(e) => e.stopPropagation()}
-      >
-        <Button
-          variant="outline"
-          size="icon"
-          className="absolute top-2 right-2 text-white bg-black bg-opacity-50 hover:bg-opacity-75"
-          onClick={onClose}
-          aria-label="closeLightbox"
+      >       
+        <div 
+          style={{ position: "relative" }}
         >
-          <X style={{width: "12px", height: "12px", color: "white"}} />
-        </Button>
-        
-        <div style={{ position: "relative"}}>
           {isLoading && (
             <div 
               style ={{
@@ -175,6 +165,7 @@ export default function Lightbox({ image, isOpen, onClose }: LightboxProps) {
             onLoadingComplete={handleImageLoadingComplete}
             placeholder="empty"
           />
+
           <div className={`absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50
            text-white py-2 px-4 rounded ${japaneseFont.className}`}>
             {image.title}

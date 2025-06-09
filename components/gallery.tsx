@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState} from "react"
+import { useEffect, useState, useRef} from "react"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 //import { cn } from "@/lib/utils"
@@ -32,6 +32,8 @@ export default function Gallery() {
   const [selectedMonth, setSelectedMonth] = useState<{ year: number; month: number } | null>(null)
   const [groupByMonth, /*setGroupByMonth*/] = useState(false)
   const itemsPerPage = 12
+
+  const galleryScrollRef = useRef<HTMLDivElement>(null)
   //const { setBackground } = useBackground();
 
   const availableMonths = getAvailableMonths()
@@ -81,15 +83,27 @@ export default function Gallery() {
   const totalPages = Math.ceil(displayData.length / itemsPerPage)
   const paginatedItems = displayData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)
 
+  const scrollToTop = () => {
+    if (galleryScrollRef.current) {
+      galleryScrollRef.current.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+    }
+  }
+
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    })
+    setTimeout(() => {
+      scrollToTop()
+    }, 0)
   }, [currentPage])
 
   useEffect(() => {
     setCurrentPage(1)
+
+    setTimeout(() => {
+      scrollToTop()
+    }, 0)
   }, [activeMainCategory, activeSubCategory, selectedMonth, groupByMonth])
 
   const handleMainCategoryClick = (categoryId: string | null) => {
@@ -123,7 +137,12 @@ export default function Gallery() {
 
   const handlePageChange = (page: number) => {
     if (page < 1 || page > totalPages) return
+    
     setCurrentPage(page)
+
+    setTimeout(() => {
+      scrollToTop()
+    }, 0)
   }
 
   const handleMonthSelect = (year: number, month: number) => {
@@ -156,10 +175,10 @@ export default function Gallery() {
         onSubCategoryClick={handleSubCategoryClick}
       />
 
-      <div className="flex-1 overflow-scroll [&::-webkit-scrollbar]:hidden transition=colors duration-300"
+      <div ref={galleryScrollRef} className="flex-1 overflow-scroll [&::-webkit-scrollbar]:hidden transition=colors duration-300"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', }}
       >
-        <main className="max-w-[90%] mx-auto px-4 py-12 md:px-8 lg:px-12 xl:max-w-[85%] 2xl:max-w-[80%]">
+        <main className="max-w-[100%] mx-auto px-4 py-12 md:px-8 lg:px-12 xl:max-w-[95%] 2xl:max-w-[90%]">
           <h1 className="text-3xl font-bold text-center mb-8">Gallery</h1>
 
           <div className={`flex flex-wrap justify-center items-center gap-4 mb-8 ${japaneseFont.className}`}>
@@ -188,7 +207,7 @@ export default function Gallery() {
 
           {/* gallery grid */}
           <AnimatePresence>
-            <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ${japaneseFont.className}`}>
+            <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ${japaneseFont.className}`}>
               {paginatedItems.map((item, index) => (
                 <motion.div
                   key={item.id}
@@ -197,10 +216,11 @@ export default function Gallery() {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
+                  className="shadow-lg hover:shadow-2xl transition-all duration-300 group hover:scale-[1.02]"
                   onClick={() => handleImageClick(index)}
                 >
                   <Card className="overflow-hidden h-full cursor-pointer" >
-                    <div className="relative aspect-[1/1] bg-muted/30">
+                    <div className="relative aspect-[3/2] bg-muted/30 object-cover transition-transform duration-500 group-hover:scale-110">
                       <Image
                       src={`/smallImages/ID${item.id}.png` || "/placeholder.svg"}
                       alt={item.title}
