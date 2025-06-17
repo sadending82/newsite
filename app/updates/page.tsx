@@ -18,7 +18,7 @@ export default function UpdatesPage() {
   // 필터 버튼에 표시할 카운트 정보
   const updateCounts = {
     all: stats.total,
-    new: stats.feature,
+    new: stats.new,
     improvement: stats.improvement,
     bugfix: stats.bugfix,
     design: stats.design,
@@ -39,17 +39,14 @@ export default function UpdatesPage() {
             </div>
           </div>
 
-          {/* 필터 */}
           <UpdateFilter selectedType={selectedType} onTypeChange={setSelectedType} updateCounts={updateCounts} />
 
-          {/* 업데이트 목록 */}
           <div className="space-y-6">
             {filteredUpdates.map((update) => (
               <UpdateItemComponent key={update.id} update={update} />
             ))}
           </div>
 
-          {/* 결과가 없을 때 */}
           {filteredUpdates.length === 0 && (
             <div className="text-center py-12">
               <p className={`text-gray-500 text-lg ${japaneseFont.className}`}>そのタイプのアップデートが存在しません。</p>
@@ -57,7 +54,6 @@ export default function UpdatesPage() {
           )}
 
           <div className="px-5">
-          {/* 통계 */}
           <UpdateStats stats={stats} />
           </div>
         </Card>

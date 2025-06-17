@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Calendar, ChevronDown } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { updateTypeConfig, formatDate } from "@/lib/updateConfig"
+import { updateTypeConfig, formatDate, getRelativeDate } from "@/lib/updateConfig"
 import type { UpdateItem } from "@/types/updates"
 import { japaneseFont } from "@/components/fonts"
 
@@ -48,7 +48,7 @@ export default function UpdateItemComponent({ update }: UpdateItemProps) {
                 <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
                   <div className="flex items-center gap-1">
                     <Calendar className="h-4 w-4" />
-                    {formatDate(update.date)}
+                    {`${formatDate(update.date)} (${getRelativeDate(update.date)})`}
                   </div>
                   <span className={`px-2 py-1 text-xs rounded-full ${config.bgColor} ${config.color}`}>
                     {config.label}

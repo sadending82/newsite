@@ -24,7 +24,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 w-full bg-white/50 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 w-full bg-white/50 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-500">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-xl font-bold">
           Sady&apos;s Memory Box
