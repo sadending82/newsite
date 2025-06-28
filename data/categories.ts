@@ -49,6 +49,7 @@ export const mainCategories: Category[] =[
         {id: "rako", name: "ラコシンジゲート", color: "", logoUrl: ""},
         {id: "yuyuchi", name: "ゆゆち", color: "", logoUrl: ""},
         {id: "wako", name: "わこー", color: "", logoUrl: ""},
+        {id: "mako", name: "まこ", color: "", logoUrl: ""},
     ]
     }
 ]
